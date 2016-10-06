@@ -1,9 +1,0 @@
-mixin promoItem(img, alt, title, text)
-  .col-xs-4
-    +e.A.item(href="page-landing.html")
-      +e.H3.title 
-        span #{title}
-      +e.img
-        img(src= "img/" + img alt= alt title= alt)
-        +e.text 
-          span #{text}
