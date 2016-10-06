@@ -1,0 +1,7 @@
+mixin reviewPic(img, text)
+  +e.pic
+    +e.A.img(href='#')
+      img(src= "img/reviews/" + img alt= text title= text)
+    +e.modal
+      img(src= "img/reviews/" + img alt= text title= text)
+  //- можно еще задать width/height, но т.к. изображения в контейнерах, все равно растянутся

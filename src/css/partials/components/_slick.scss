@@ -1,0 +1,28 @@
+.slick-arrow{
+  display: block;
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  outline: none; 
+  padding: 0;   
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+.slick-prev{
+  @include sprite($s-arrow-next); 
+  left: 0; 
+  transform: translate(0, -50%) rotate(180deg);
+  &:hover, &:focus{
+    transform: translate(0, -50%) rotate(180deg) scale(1.25);
+  } 
+}
+.slick-next{
+  @include sprite($s-arrow-next);
+  transform: translate(0, -50%);
+  right: 0;
+  &:hover, &:focus{
+    transform: translate(0, -50%) scale(1.25);
+  } 
+}

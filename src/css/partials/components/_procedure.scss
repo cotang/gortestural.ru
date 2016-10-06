@@ -1,0 +1,107 @@
+.procedure{
+  text-align: center;
+  background-color: $light-grey;
+
+  &__title{
+    font-size: $font-size-title;
+    margin: 55px 0 90px;
+  }
+  &__item{
+    margin-bottom: 50px;
+    &:nth-of-type(1){
+      .procedure__icon:before{
+        @include sprite($s-procedure-doc);
+      }
+    }
+    &:nth-of-type(2){
+      .procedure__icon:before{
+        @include sprite($s-procedure-talks);
+      }
+    }
+    &:nth-of-type(3){
+      .procedure__icon:before{
+        @include sprite($s-procedure-list);
+      }
+    }
+    &:nth-of-type(4){
+      .procedure__icon:before{
+        @include sprite($s-procedure-car);
+      }
+    }
+  }
+  &__block{
+    background-color: $white;
+    height: 100%;
+    padding: 30px 30px 50px;
+    position: relative;
+    &:hover, &:focus {
+      .procedure__icon{
+        background-color: $red;
+      }
+      .procedure__step{
+        color: $red;
+      }
+      .procedure__arrow,
+      .procedure__arrow:before,
+      .procedure__arrow:after{
+        background-color: $red;
+      }
+    }
+  }
+  &__icon{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $dark-grey;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: inline-block;      
+    }
+  }
+  &__step{
+    font-size: $font-size-title-24;
+    font-weight: $bold;
+    margin: 0;
+    padding: 25px 0 15px;
+  }
+  &__arrow{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 80px;
+    background-color: $dark-grey;
+    &:before{
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 5px;
+      height: 2px;
+      width: 20px; 
+      transform: rotate(-30deg);  
+      background-color: $dark-grey;   
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -5px;
+      height: 2px;
+      width: 20px; 
+      transform: rotate(30deg);  
+      background-color: $dark-grey;   
+    }
+  }
+  &__btn{
+    margin-bottom: 60px;
+  }
+}

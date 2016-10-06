@@ -1,0 +1,12 @@
+.specialists{
+  text-align: center;
+  background-color: $lightest-grey;
+
+  &__title{
+    font-size: $font-size-title;
+    margin: 25px 0 45px;
+  }
+  &__gallery{
+    padding: 0 60px;
+  }
+}

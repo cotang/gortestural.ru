@@ -1,0 +1,33 @@
+.services-section{
+
+  &__title{
+    color: $text-color-white;
+    font-size: $font-size-title-24;
+    margin: 0 0 40px;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      background-color: $red;
+      height: 2px;
+      width: 80px;
+    }
+  }
+  &__list{
+    color: $text-color-grey3;
+    padding-left: 0;
+    padding-right: 10px;
+    margin: 0;
+    list-style-type: none;
+    columns: 2;
+  }
+  &__item{
+    margin-bottom: 5px;
+    &:before{
+      content: '- ';
+    }
+  }
+}
+

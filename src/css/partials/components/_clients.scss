@@ -1,0 +1,25 @@
+.clients{
+  text-align: center;
+  background-color: $lighter-grey;
+
+  &__title{
+    font-size: $font-size-title;
+    margin: 50px 0 40px;
+  }
+  &__gallery{
+    padding: 0 60px;
+    margin: 40px 0;
+  }
+  &__slide{
+    height: 100%;
+  }
+  &__img{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    img{
+      margin: 0 auto;
+    }
+  }
+}
+

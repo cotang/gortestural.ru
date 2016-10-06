@@ -1,0 +1,22 @@
+.cost{
+  background-color: $grey;
+  &__inner{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  &__title{
+    margin: 0;
+    font-weight: $bold;
+    font-size: $font-size-supertitle;
+    color: $text-color-white;
+    text-align: center;
+  }
+  &__text{
+    margin: 0 0 5px;
+    font-weight: $light;
+    text-align: center;
+    color: $text-color-white;
+    font-size: $font-size-title-24;
+  }
+}

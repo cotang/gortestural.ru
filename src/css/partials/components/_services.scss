@@ -1,0 +1,122 @@
+.services{
+  text-align: center;
+
+  &__title{
+    margin: 25px 0 45px;
+    font-size: $font-size-title;
+    color: $dark-blue;
+    font-weight: $regular;
+  }
+
+  &__item{
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+
+    .services__icon:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);      
+    }
+    &:nth-of-type(1) .services__icon:after{
+      @include sprite($s-icon-rst);
+    }
+    &:nth-of-type(2) .services__icon:after{
+      @include sprite($s-icon-rst-voluntary);
+    }
+    &:nth-of-type(3) .services__icon:after{
+      @include sprite($s-icon-document);
+    }
+    &:nth-of-type(4) .services__icon:after{
+      @include sprite($s-icon-eac);
+    }
+    &:nth-of-type(5) .services__icon:after{
+      @include sprite($s-icon-eac-doc);
+    }
+    &:nth-of-type(6) .services__icon:after{
+      @include sprite($s-icon-eagle);
+    }
+    &:nth-of-type(7) .services__icon:after{
+      @include sprite($s-icon-eagle-ez);
+    }
+    &:nth-of-type(8) .services__icon:after{
+      @include sprite($s-icon-mail);
+    } 
+    &:nth-of-type(9) .services__icon:after{
+      @include sprite($s-icon-eac-pic);
+    }
+    &:nth-of-type(10) .services__icon:after{
+      @include sprite($s-icon-mechanism);
+    }
+    &:nth-of-type(11) .services__icon:after{
+      @include sprite($s-icon-mechanism-doc);
+    }
+    &:nth-of-type(12) .services__icon:after{
+      @include sprite($s-icon-fire);
+    }
+    &:nth-of-type(13) .services__icon:after{
+      @include sprite($s-icon-fire-doc);
+    }
+    &:nth-of-type(14) .services__icon:after{
+      @include sprite($s-icon-sbkt-doc);
+    }
+    &:nth-of-type(15) .services__icon:after{
+      @include sprite($s-icon-tpp-rf);
+    }
+    &:nth-of-type(16) .services__icon:after{
+      @include sprite($s-icon-iso);
+    }    
+    &:nth-of-type(17) .services__icon:after{
+      @include sprite($s-icon-bricks);
+    } 
+    &:nth-of-type(18) .services__icon:after{
+      @include sprite($s-icon-barcode);
+    }
+    &:nth-of-type(19) .services__icon:after{
+      @include sprite($s-icon-patented);
+    }
+    &:nth-of-type(20) .services__icon:after{
+      @include sprite($s-icon-industrial);
+    }
+    &:nth-of-type(21) .services__icon:after{
+      @include sprite($s-icon-ozone);
+    }
+    &:nth-of-type(22) .services__icon:after{
+      @include sprite($s-icon-eagle-round);
+    }
+    &:nth-of-type(23) .services__icon:after{
+      @include sprite($s-icon-eagle-shield);
+    }
+    &:nth-of-type(24) .services__icon:after{
+      @include sprite($s-icon-minpromtorg);
+    }
+
+    &:hover{
+      .services__icon{
+        border: 1px solid $light-blue; 
+        box-shadow: 0 0 10px 3px $light-blue;      
+      }
+      .services__type{
+        // font-weight: $semibold;
+      }
+    }
+  }
+  &__icon{
+    position: relative;
+    display: block;
+    margin: 0 auto 10px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 1px solid $border-grey;
+    background-image: linear-gradient( 0deg, rgb(215,215,215) 0%, rgb(238,238,238) 100%);
+    box-shadow: 0px 2px 0px 0px rgba(237, 237, 237, 0.004), inset 0px 2px 0px 0px rgba(255, 255, 255, 0.004);
+    @include transition();
+  }
+  &__type{
+    font-size: $font-size-small;
+    margin-top: 10px;
+  }
+}

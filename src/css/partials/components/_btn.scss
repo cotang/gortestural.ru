@@ -1,0 +1,57 @@
+.btn{
+  display: inline-block;
+  border: none;
+  outline: none;
+  border-radius: 3px; 
+  background-color: $red;
+  color: $text-color-white;
+  font-size: $font-size-promo;
+  font-weight: $bold;   
+  padding: 10px 30px;
+  margin: 0;
+  &:hover, &:focus, &:active{
+    color: $text-color-white;
+    text-decoration: none;
+  }
+  &--form{
+    font-size: $font-size;
+    padding: 8px 60px;
+  } 
+  &--white{
+    background-color: $white;
+    color: $text-color;
+    padding: 10px 60px;
+    &:hover, &:focus, &:active{
+      color: $text-color;
+    }
+  } 
+  &--small{
+    font-size: $font-size-small;
+    padding: 8px 15px;
+  }
+  &--branches{
+    font-size: $font-size;
+    padding: 8px 40px;
+    text-transform: uppercase;
+  }
+}
+
+.up{
+  display: none;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  background-color: rgba($dark-grey, .7);
+  &:after{
+    content: '';
+    display: inline-block;
+    @include sprite($s-arrow-next2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+  }
+}

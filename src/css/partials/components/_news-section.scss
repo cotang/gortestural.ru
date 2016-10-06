@@ -1,0 +1,23 @@
+.news-section{
+  margin-bottom: 50px;
+  &__title{
+    font-size: $font-size-title;
+    margin: 50px 0 40px;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      background-color: $dark-grey;
+      height: 2px;
+      width: 80px;
+    }
+  }
+  &__link{
+    display: block;
+    margin-bottom: 20px;
+    font-weight: $bold;
+  }
+}
+

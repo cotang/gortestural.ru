@@ -1,0 +1,12 @@
+include ../abstracts/bemto/bemto.pug
+
++b.SECTION.other-docs
+  +e.inner.container
+    .row
+      .col-xs-12
+        +e.H2.title Если вам нужны другие документы
+        +e.gallery
+          - for (var i = 1; i < 6; i++){
+            +e.slide
+              img(src= "img/doc1.png", alt="doc1", title="doc1")
+          - }

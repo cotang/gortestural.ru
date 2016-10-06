@@ -1,0 +1,42 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--front-page
+    // Promo
+    include partials/components/_promo.pug
+    // Cost
+    include partials/components/_cost.pug 
+    .container
+      .row
+        .col-xs-12.col-xl-8     
+          // Introduction
+          include partials/components/_introduction.pug 
+        .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3.col-xl-4.offset-xl-0
+          .page__form--aside
+            // Form application
+            include partials/components/_form--application.pug 
+    // Specialists
+    include partials/components/_specialists.pug 
+    // Procedure
+    include partials/components/_procedure.pug 
+    // Other docs
+    include partials/components/_other-docs.pug 
+    // FAQ
+    include partials/components/_faq.pug 
+    // Gratitude
+    include partials/components/_gratitude.pug 
+    // Clients
+    include partials/components/_clients.pug 
+    .container
+      .row
+        .col-xs-12.col-md-4    
+          // News section
+          include partials/components/_news-section.pug 
+        .col-xs-12.col-md-4
+          // Laws section
+          include partials/components/_laws-section.pug 
+        .col-xs-12.col-md-4
+          // Code base
+          include partials/components/_code-base.pug 
+
+

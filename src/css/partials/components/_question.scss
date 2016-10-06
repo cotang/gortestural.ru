@@ -1,0 +1,32 @@
+.question{  
+  margin-top: 10px;
+  margin-bottom: 50px;
+
+  &__title{
+    margin: 25px 0 40px;
+    font-weight: $bold;
+    font-size: $font-size-title;
+    color: $dark-blue;
+    // @include mq($from:xs, $until:sm){
+    //   font-size: $font-size-promo;
+    // }     
+  }
+  &__subtitle{
+    font-weight: $bold;
+    font-size: $font-size-subtitle;
+    color: $dark-blue;    
+  }
+  &__link{
+    display: inline-block;
+    font-size: $font-size-promo;
+    color: $dark-blue;  
+  } 
+  &__answer{
+    background-color: $grey-bg;
+    padding: 10px;
+    font-size: $font-size-content;
+  } 
+  &__person{
+    font-weight: $semibold;
+  }
+}

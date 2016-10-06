@@ -1,0 +1,22 @@
+.office{
+  &__flags{
+    img{
+      margin-right: 10px;
+    }
+  }
+  &__map{
+    padding: 20px 0;
+    @include mq($from:xs, $until:sm){
+      padding: 0;
+    } 
+
+    iframe{
+      width: 100%;
+      height: 400px;
+      @include mq($from:xs, $until:sm){
+        height: 300px;
+      }      
+    }
+  }
+}
+

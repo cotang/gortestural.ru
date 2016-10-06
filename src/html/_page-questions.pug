@@ -1,0 +1,18 @@
+extends partials/templates/template.pug
+
+block content
+  +b.SECTION.page
+    .container
+      .row
+        .col-xs-12.col-xl-8
+          +b.SECTION.breadcrumbs
+            a(href="index.html") Сертификационный центр Промотест
+            ='>'
+            span Вопросы и ответы
+          // Content
+          +b.SECTION.content
+            +e.H1.title Вопросы и ответы
+            include partials/components/questions.pug
+        .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3.col-xl-4.offset-xl-0
+          include partials/components/sidebar.pug
+

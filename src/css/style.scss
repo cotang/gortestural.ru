@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+// 3rd party
+@import "partials/abstracts/variables";
+@import "partials/abstracts/bootstrap-flex";
+@import "vendor/normalize";
+@import "vendor/mq";
+@import "vendor/slick";
+
+// Abstracts
+// @import "partials/abstracts/functions";
+@import "partials/abstracts/mixins";
+// @import "partials/abstracts/placeholders";
+// @import "partials/abstracts/helpers";
+@import "partials/abstracts/png-sprite";
+
+// Base
+// @import "partials/base/typography";
+@import "partials/base/template";
+
+// Components
+@import "partials/components/form";
+@import "partials/components/form-states";
+@import "partials/components/slick";
+
+@import "partials/components/header";
+@import "partials/components/after-header";
+// @import "partials/components/sidebar";
+@import "partials/components/footer";
+@import "partials/components/page";
+@import "partials/components/overlay";
+@import "partials/components/breadcrumbs";
+// @import "partials/components/pagination";
+
+@import "partials/components/btn";
+@import "partials/components/city";
+@import "partials/components/promo";
+@import "partials/components/cost";
+@import "partials/components/introduction";
+@import "partials/components/specialists";
+@import "partials/components/manager";
+@import "partials/components/procedure";
+@import "partials/components/other-docs";
+@import "partials/components/faq";
+@import "partials/components/gratitude";
+@import "partials/components/clients";
+@import "partials/components/news-section";
+@import "partials/components/laws-section";
+@import "partials/components/code-base";
+@import "partials/components/services-section";
+@import "partials/components/contacts-footer";
+
+@import "partials/components/landing";
+@import "partials/components/offer";
+@import "partials/components/compulsory-docs";
+@import "partials/components/branches";
+
+
+// @import "partials/components/reviews";
+// @import "partials/components/reviews-section";
+// @import "partials/components/question";
+// @import "partials/components/questions-section";
+
+@import "partials/components/content";
+// @import "partials/components/office";
+
+
+
+
+
+

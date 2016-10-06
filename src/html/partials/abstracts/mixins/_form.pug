@@ -1,0 +1,65 @@
+- var application = [{name: 'application', id: 'formApplication', title : 'Введите продукцию, и мы подскажем, что на нее оформить', application: true, button: 'Отправить', success: 'Ваша заявка отправлена'}] 
+- var question = [{name: 'question', id: 'formQuestion', title : 'Задать вопрос', question: true, button: 'Отправить', success: 'Ваш вопрос отправлен'}] 
+- var review = [{name: 'review', id: 'formReview', title : 'Напишите отзыв о нашей работе', review: true, button: 'Отправить отзыв', success: 'Отзыв успешно отправлен'}] 
+
+mixin form(items)
+  each item in items
+    +b.SECTION(class= 'form--' + item.name)
+      form(action='', method='', id= item.id)
+        +e.A.close(href='#')
+        +e.H3.title #{item.title}
+
+        if item.application
+          .form-group.field-name.required
+            +e.P.text Ваше имя
+              span.color-red *
+            +e.INPUT.input(type='text', name='Имя')
+            p.help-block Ошибка заполнения поля формы
+          .form-group.field-email.required
+            +e.P.text Ваш e-mail
+              span.color-red *
+            +e.INPUT.input(type='email', name='Email')
+            p.help-block Ошибка заполнения поля формы
+          .form-group.field-request.required
+            +e.P.text Ваш запрос
+              span.color-red *
+            +e.TEXTAREA.textarea(type='text', name='Запрос') 
+            p.help-block Ошибка заполнения поля формы
+
+        if item.question
+          .form-group.field-name.required
+            +e.P.text Ваше имя
+              span.color-red *
+            +e.INPUT.input(type='text', name='Имя')
+            p.help-block Ошибка заполнения поля формы
+          .form-group.field-email-tel.required
+            +e.P.text Ваш e-mail или телефон
+              span.color-red *
+            +e.INPUT.input(type='text', name='Email/телефон')
+            p.help-block Ошибка заполнения поля формы
+          .form-group.field-question.required
+            +e.P.text Ваш вопрос
+              span.color-red *
+            +e.TEXTAREA.textarea(type='text', name='Вопрос') 
+            p.help-block Ошибка заполнения поля формы
+
+        if item.review
+          .form-group.field-name.required
+            +e.P.text Ваша компания
+              span.color-red *
+            +e.INPUT.input(type='text', name='Компания')
+            p.help-block Ошибка заполнения поля формы
+          .form-group.field-email.required
+            +e.P.text Ваш e-mail
+              span.color-red *
+            +e.INPUT.input(type='email', name='Email')
+            p.help-block Ошибка заполнения поля формы
+          .form-group.field-review.required
+            +e.P.text Ваш отзыв
+              span.color-red *
+            +e.TEXTAREA.textarea(type='text', name='Отзыв') 
+            p.help-block Ошибка заполнения поля формы
+
+        .form-group
+          +b.BUTTON.btn--form(type='submit') #{item.button}
+          p.help-block.help-block-success #{item.success}

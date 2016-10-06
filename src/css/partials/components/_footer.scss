@@ -1,0 +1,72 @@
+.pre-footer{
+  padding: 10px 0;
+  background-color: $lightest-grey;
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+.footer{
+  background-color: $darker-grey;
+  padding: 40px 0 20px;
+
+  // @include mq($from:xs, $until:sm){
+  //   padding: 0;
+  // } 
+
+  &__excerpt{
+    color: $text-color-grey2;
+    margin-top: 25px;
+  }
+  &__link{
+    &--more{
+      display: inline-block;
+      margin-top: 15px;
+      color: $red;
+    }
+  }
+
+
+}
+.accreditation{
+  margin-top: 40px;
+  display: flex;
+  &__logo{
+    background-image: url(../img/footer-sign.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100px;
+    width: 65px;
+    flex: 0 0 65px;
+  }
+  &__link-wrapper{
+    padding-left: 20px;
+  }
+  &__line{
+    margin-bottom: 10px;
+    color: $text-color-white;
+  }
+}
+
+.after-footer{
+  background-color: $darkest-grey;
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__copyright{
+    color: $text-color-grey2;
+    a{
+      padding: 0 10px;
+      color: $text-color-white;
+      &:hover, &:focus {
+        color: $text-color-white;
+      }
+    }
+  }
+}

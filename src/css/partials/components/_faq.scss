@@ -1,0 +1,102 @@
+.faq{
+  text-align: center;
+
+  &__title{
+    font-size: $font-size-title;
+    margin: 65px 0 10px;
+  }
+  &__description{
+    margin: 10px 0;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $dark-grey;
+      height: 2px;
+      width: 180px;
+    }
+  }
+  &__inner{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__questions{
+    flex: 0 0 62.5%;
+    max-width: 62.5%;
+    padding-right: 15px;
+    padding-left: 0;
+    margin: 60px 0 0;
+    list-style-type: none;
+    text-align: left;
+  }
+  &__item{
+    margin-bottom: 10px;
+    &--active{
+      .faq__ask{
+        background-color: $dark-grey;
+        color: $text-color-white;
+      }
+      .faq__icon{
+        background-color: $red;
+        &:after{
+          transform: translate(-50%, -50%) rotate(90deg);
+        }        
+      }
+      .faq__text{
+        display: block;
+      }
+    }    
+  }
+  &__ask{
+    border-radius: 5px;
+    margin: 0;
+    background-color: $lightest-grey;
+    position: relative;
+    font-size: $font-size-promo;
+    padding: 8px 30px;
+    &:hover, &:focus {
+      cursor: pointer;
+    }
+  }
+  &__icon{
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    background-color: $dark-grey;
+    &:after{
+      content: '';
+      display: inline-block;
+      @include sprite($s-arrow-next2);
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__text{
+    display: none;
+    padding: 10px 30px;
+  }
+
+  &__citation{
+    flex: 0 0 37.5%;
+    max-width: 37.5%;
+    padding-left: 15px;    
+    padding-top: 55px;
+    background-image: url(../img/head-manager.png);
+    background-repeat: no-repeat;
+    background-position: -70% 100%;
+  }
+  .manager-info{
+    margin: 25px 0 155px;
+    background-color: rgba($dark-grey, .8);
+    border-radius: 5px;
+  }
+}
+
