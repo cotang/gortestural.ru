@@ -2,9 +2,29 @@
   padding: 10px 0;
   background-color: $lightest-grey;
   &__nav{
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include mq($from:xs, $until:xl){
+      flex-wrap: wrap;
+    }
+  }
+  &__item{
+    @include mq($from:xs, $until:lg){
+      flex: 0 0 100%;
+      text-align: center;
+      margin: 5px 0;
+    }    
+    &--search{
+      @include mq($from:xs, $until:xl){
+        flex: 0 0 100%;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
   }
 }
 
@@ -12,10 +32,6 @@
 .footer{
   background-color: $darker-grey;
   padding: 40px 0 20px;
-
-  // @include mq($from:xs, $until:sm){
-  //   padding: 0;
-  // } 
 
   &__excerpt{
     color: $text-color-grey2;
@@ -55,18 +71,34 @@
   background-color: $darkest-grey;
   &__flex{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
+    @include mq($from:xs, $until:lg){
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
   &__copyright{
     color: $text-color-grey2;
+    @include mq($from:xs, $until:lg){
+      flex: 0 0 100%;
+      text-align: center;
+      margin: 15px 0 5px;
+      order: 1;
+    }
     a{
       padding: 0 10px;
       color: $text-color-white;
       &:hover, &:focus {
         color: $text-color-white;
       }
+    }
+    span{
+      @include mq($from:xs, $until:lg){
+        display: block;
+      }      
     }
   }
 }

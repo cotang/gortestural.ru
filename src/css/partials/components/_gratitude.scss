@@ -4,6 +4,9 @@
   &__title{
     font-size: $font-size-title;
     margin: 50px 0 15px;
+    @include mq($from:xs, $until:md){
+      font-size: $font-size-title-24;
+    }
   }
   &__description{
     max-width: 600px;
@@ -22,9 +25,6 @@
     }
   }
 
-  &__gallery{
-
-  }
   &__slide{
     background-color: $lightest-grey;
     margin: 0 15px;
@@ -38,7 +38,6 @@
       margin: 0 5px;      
     }
     button{
-      // padding: 0;
       width: 12px;
       height: 12px;
       color: transparent;
@@ -56,7 +55,10 @@
 
 
 .gratitude-item{
-  display: flex;    
+  display: flex;
+  @include mq($from:xs, $until:sm){
+    flex-wrap: wrap;
+  }
 
   &__img{
     flex: 0 0 100px;
@@ -76,6 +78,12 @@
   &__review{
     margin: 20px 25px 25px;
     text-align: left;
+    @include mq($from:xs, $until:sm){
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin: 20px 0 25px;
+      padding: 0 20px;
+    }
   }
   &__title{
     margin: 0;

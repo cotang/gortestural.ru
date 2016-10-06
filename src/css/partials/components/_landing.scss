@@ -4,6 +4,9 @@
   &__title{
     margin: 30px 0;
     font-size: $font-size-max;
+    @include mq($from:xs, $until:md){
+      font-size: $font-size-title-24;
+    }
   }
   &__text{
     color: $text-color-grey3;

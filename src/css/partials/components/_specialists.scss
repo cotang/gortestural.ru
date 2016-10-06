@@ -5,8 +5,14 @@
   &__title{
     font-size: $font-size-title;
     margin: 25px 0 45px;
+    @include mq($from:xs, $until:md){
+      font-size: $font-size-title-24;
+    }
   }
   &__gallery{
     padding: 0 60px;
+    @include mq($from:xs, $until:sm){
+      padding: 0 20px;
+    }
   }
 }

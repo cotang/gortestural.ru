@@ -1,0 +1,42 @@
+.search{
+  padding-top: 10px;
+  position: relative;
+  @include mq($from:xs, $until:xl){
+    text-align: center;
+  }
+  &__form{
+    &:after{
+      content: '';
+      display: inline-block;
+      vertical-align: text-bottom;
+      @include sprite($s-icon-loupe);
+    }   
+  }
+  &__input{
+    font-weight: $light;
+    font-size: $font-size-small;
+    background-color: transparent;
+    border: 2px solid $grey;
+    padding-left: 5px;
+    color: $link-color-white;  
+    &:hover, &:focus{
+      outline: none;
+    }
+    &:focus::-webkit-input-placeholder{
+      color: transparent;         
+    }       
+    &:focus::placeholder{
+      color: transparent;         
+    }
+  }
+
+  &--footer{
+    padding-top: 0;
+    .search__input{
+      color: $link-color;
+      padding: 5px;
+      width: 180px;
+    }
+  }
+}
+

@@ -1,10 +1,15 @@
 .contacts-footer{
-
+  @include mq($from:xs, $until:sm){
+    margin-top: 40px;
+  }
   &__title{
     color: $text-color-white;
     font-size: $font-size-title-24;
     margin: 0 0 40px;
     position: relative;
+    @include mq($from:xs, $until:md){
+      font-size: $font-size-subtitle
+    } 
     &:after{
       content: '';
       position: absolute;

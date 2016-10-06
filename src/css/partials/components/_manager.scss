@@ -1,15 +1,29 @@
-.manager{
-  // margin-bottom: 50px;
+.manager{  
+  &__title{
+    margin: 0;
+    padding: 10px 0;
+  }
+
   &__inner{
     display: flex;
+    @include mq($from:xs, $until:md){
+      flex-wrap: wrap;
+    }
   }
   &__photo{
     flex: 0 0 250px;
     max-width: 250px;
+    @include mq($from:xs, $until:md){
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
   }
   &__img{
     width: 250px;
     height: 270px;
+    @include mq($from:xs, $until:md){
+      margin: 0 auto;
+    }
     img{
       width: 100%;
       height: 100%;
@@ -17,11 +31,27 @@
       object-fit: cover;
     }
   }
-
   &__btn{
+    text-align: center;
     margin: 5px 0 50px;
+    @include mq($from:xs, $until:md){
+      max-width: 250px;
+      margin: 5px auto 50px;
+    }
     .btn{
       width: 100%;
+    }
+  }
+
+  &--sidebar{
+    text-align: center;
+    padding-bottom: 10px;
+    .manager__btn{
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .btn{
+      font-size: $font-size;      
     }
   }
 }
@@ -29,14 +59,15 @@
 .manager-info{
   max-width: 250px;
   background-color: $dark-grey;
-  color: $white;    
+  color: $white;  
+  @include mq($from:xs, $until:md){
+    margin: 0 auto;
+  }
+
   &__name{
     margin: 0;
     padding: 5px 0;
     font-size: $font-size-subtitle;
-  }
-  &__position{
-
   }
   &__line{
     padding: 5px 0;
@@ -65,6 +96,16 @@
     }
   }
 
+  &--sidebar{
+    background-color: transparent;
+    color: $text-color;
+    .manager-info__link{
+      color:  $text-color;
+    }
+    .manager-info__name{
+      font-size: $font-size-promo;
+    }
+  }
 }
 
 .manager-bio{
@@ -72,6 +113,11 @@
   max-width: calc(100% - 250px);
   text-align: left;
   padding: 0 30px;
+  @include mq($from:xs, $until:md){
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   &__name{
     margin: 10px 0 0;
     font-size: $font-size-subtitle;
@@ -90,7 +136,7 @@
   margin: 0;
   text-align: left;
   max-width: 250px;
-  background-color: $lightest-grey;
+  background-color: rgba($lightest-grey, .7);
   border-radius: 5px;
   padding: 10px 15px 10px;
   position: relative;
@@ -101,8 +147,8 @@
     top: 100%;
     right: 30px;
     border: 10px solid transparent; 
-    border-top: 10px solid $lightest-grey; 
-    border-right: 10px solid $lightest-grey;
+    border-top: 10px solid rgba($lightest-grey, .7);
+    border-right: 10px solid rgba($lightest-grey, .7);
   }
   &__title{
     margin: 0 0 5px;

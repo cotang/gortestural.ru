@@ -5,6 +5,9 @@
   &__title{
     font-size: $font-size-title;
     margin: 55px 0 90px;
+    @include mq($from:xs, $until:md){
+      font-size: $font-size-title-24;
+    }
   }
   &__item{
     margin-bottom: 50px;

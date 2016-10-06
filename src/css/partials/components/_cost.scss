@@ -11,6 +11,9 @@
     font-size: $font-size-supertitle;
     color: $text-color-white;
     text-align: center;
+    @include mq($from:xs, $until:md){
+      font-size: $font-size-title-24;
+    }
   }
   &__text{
     margin: 0 0 5px;
@@ -18,5 +21,8 @@
     text-align: center;
     color: $text-color-white;
     font-size: $font-size-title-24;
+    @include mq($from:xs, $until:md){
+      font-size: $font-size-promo;
+    }    
   }
 }

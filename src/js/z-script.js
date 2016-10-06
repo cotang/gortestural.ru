@@ -53,20 +53,16 @@ jQuery(document).ready(function($){
   /* hamburger - product-type */
   $('.hamburger').click(function(e) { 
       e.preventDefault();    
-      $('.after-header__dropdown--product-type').show();
-  });
-  $('.product-type-dropdown__close').click(function(e) { 
-      e.preventDefault();
-      $(this).closest('.after-header__dropdown--product-type').hide();
+      $('.menu-dropdown--product-type').show();
   });
   /* menu - document-type */
   $('.document-type-menu__link').click(function(e) { 
       e.preventDefault();    
-      $('.after-header__dropdown--document-type').show();
+      $('.menu-dropdown--document-type').show();
   });
-  $('.document-type-dropdown__close').click(function(e) { 
+  $('.menu-dropdown__close').click(function(e) { 
       e.preventDefault();
-      $(this).closest('.after-header__dropdown--document-type').hide();
+      $(this).closest('.menu-dropdown').hide();
   });
 
     // Timeline - tabs
@@ -85,6 +81,8 @@ jQuery(document).ready(function($){
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 8000,
     centerMode: true,
     centerPadding: '0'
   });
@@ -95,7 +93,23 @@ jQuery(document).ready(function($){
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: '0'
+    centerPadding: '0',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
   /* Faq accordion */
@@ -121,7 +135,16 @@ jQuery(document).ready(function($){
     autoplay: true,
     autoplaySpeed: 4000,
     centerMode: true,
-    centerPadding: '0'
+    centerPadding: '0',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
   /* галерея "клиенты" */
@@ -130,7 +153,23 @@ jQuery(document).ready(function($){
     slidesToShow: 6,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: '0'
+    centerPadding: '0',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
   /* плавный скролл наверх */
@@ -179,8 +218,26 @@ jQuery(document).ready(function($){
       $('.overlay .form--application .form__textarea').text("Пакет документов для отрасли: "+value);
   });
 
-
-
+    /* одинаковая высота у promo__title */
+    var promoTitleMaxHeight = 0;
+    var promoTitleItem = $(".promo__title");
+    $(promoTitleItem).each(function(){
+     if ( $(this).height() > promoTitleMaxHeight ) 
+     {
+      promoTitleMaxHeight = $(this).height();
+     }
+    });
+    $(promoTitleItem).height(promoTitleMaxHeight);
+    /* одинаковая высота у promo__text */
+    var promoTextMaxHeight = 0;
+    var promoTextItem = $(".promo__text");
+    $(promoTextItem).each(function(){
+     if ( $(this).height() > promoTextMaxHeight ) 
+     {
+      promoTextMaxHeight = $(this).height();
+     }
+    });
+    $(promoTextItem).height(promoTextMaxHeight);
 
 
 
@@ -208,25 +265,25 @@ jQuery(document).ready(function($){
 
 
   /* Hamburger */
-  if ($(window).width() < 768) {
-    var headerNavItem = $('.header .nav__item');
-    $('.nav__hamburger').show();
-    $(headerNavItem).hide(); 
-    $('.hamburger').click(function(e){
-      e.preventDefault();
-      $(this).toggleClass('hamburger--close');
-      $(headerNavItem).toggle();
-    });               
-  }
+  // if ($(window).width() < 768) {
+  //   var headerNavItem = $('.header .nav__item');
+  //   $('.nav__hamburger').show();
+  //   $(headerNavItem).hide(); 
+  //   $('.hamburger').click(function(e){
+  //     e.preventDefault();
+  //     $(this).toggleClass('hamburger--close');
+  //     $(headerNavItem).toggle();
+  //   });               
+  // }
 
   /* Открывание меню поиска по клику на иконку */
-  if ($(window).width() <= 1024) {
-    $('.search__form').hide(); 
-    $('.search__icon').click(function(e){
-      e.preventDefault();
-      $('.search__form').toggle();
-    });               
-  }
+  // if ($(window).width() <= 1024) {
+  //   $('.search__form').hide(); 
+  //   $('.search__icon').click(function(e){
+  //     e.preventDefault();
+  //     $('.search__form').toggle();
+  //   });               
+  // }
 
   /* галерея "с нами уже работают" */
   $('.reviews-section__gallery').slick({

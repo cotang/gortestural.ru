@@ -1,0 +1,55 @@
+.general-menu{
+  &__hamburger{
+    display: none;
+  }
+  &__list{
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item{
+    @include mq($from:xs, $until:md){
+      flex: 0 0 100%;
+      text-align: center;
+    }
+  }
+  &__link{
+    color: $text-color-grey1;
+    display: inline-block;
+    padding: 10px 0;
+    @include mq($from:xs, $until:md){
+      padding: 0;
+    }
+    &:hover, &:focus{
+      color: $link-color-white;
+    }
+    &--active{
+      color: $link-color-white;
+    }
+  }
+
+  &--footer{
+    font-weight: $bold;
+    @include mq($from:xs, $until:lg){
+      flex: 0 0 100%;
+      text-align: center;
+    }
+    .general-menu__list{
+      @include mq($from:xs, $until:lg){
+        justify-content: center;
+      }      
+    }
+    .general-menu__link{
+      padding: 0 0 0 15px;
+      &--active{
+        color: $red;
+      }      
+    }    
+  }
+}
+
+
+

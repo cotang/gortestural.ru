@@ -20,37 +20,38 @@ include ../abstracts/bemto/bemto.pug
       // E-mail
       +b.email
         +e.A.link(href="mailto:info@gostestural.ru", target="_blank") info@gostestural.ru
-    +e.nav
-      // Nav menu header
-      +b.NAV.general-menu--header
-        +e.hamburger
-          +b.A.hamburger(href="#")
-        +e.UL.list
-          +e.item 
-            +e.A.link--active(href="index.html") Главная
-          +e.item 
-            +e.A.link(href="page.html") О компании
-          +e.item
-            +e.A.link(href="page-reviews.html") Отзывы
-          +e.item 
-            +e.A.link(href="page-news.html") Новости
-          +e.item
-            +e.A.link(href="page.html") Услуги
-          +e.item
-            +e.A.link(href="page.html") Помощь
-          +e.item
-            +e.A.link(href="page-contacts.html") Контакты
-    +e.search
-      // Search
-      +b.search
-        +e.FORM.form
-          +e.INPUT.input(type='text', name='Поиск', placeholder='поиск')
+    +e.wrapper
+      +e.nav
+        // Nav menu header
+        +b.NAV.general-menu--header
+          +e.hamburger
+            +b.A.hamburger(href="#")
+          +e.UL.list
+            +e.item 
+              +e.A.link--active(href="index.html") Главная
+            +e.item 
+              +e.A.link(href="page.html") О компании
+            +e.item
+              +e.A.link(href="page-reviews.html") Отзывы
+            +e.item 
+              +e.A.link(href="page-news.html") Новости
+            +e.item
+              +e.A.link(href="page.html") Услуги
+            +e.item
+              +e.A.link(href="page.html") Помощь
+            +e.item
+              +e.A.link(href="page-contacts.html") Контакты
+      +e.search
+        // Search
+        +b.search
+          +e.FORM.form
+            +e.INPUT.input(type='text', name='Поиск', placeholder='поиск')
 
 // After header
 +b.HEADER.after-header
   +e.inner.container
     .row.row-xs-middle
-      .col-xs-12.col-sm-6.col-md-4.col-xl-4
+      .col-xs-12.col-xl-4
         +e.wrapper        
           // Product type menu
           +b.NAV.product-type-menu
@@ -66,42 +67,41 @@ include ../abstracts/bemto/bemto.pug
               +e.item
                 +e.A.link(href="javascript:void(0);") Типы документов
 
-      .col-xs-12.col-md-5.col-xl-6
-        // Cert type menu
-        +b.NAV.cert-type-menu
-          +e.UL.list
-            +e.item
-              +e.A.link(href="page.html") Сертификаты на производство
-            +e.item
-              +e.A.link(href="page.html") Разработка тех.документации
-            +e.item
-              +e.A.link(href="page.html") Документы для таможни
-            +e.item
-              +e.A.link(href="page.html") Допуски СРО
-            +e.item
-              +e.A.link(href="page.html") Международные сертификаты
+      .col-xs-12.col-xl-8
+        +e.wrapper
+          // Cert type menu
+          +b.NAV.cert-type-menu
+            +e.UL.list
+              +e.item
+                +e.A.link(href="page.html") Сертификаты на производство
+              +e.item
+                +e.A.link(href="page.html") Разработка тех.документации
+              +e.item
+                +e.A.link(href="page.html") Документы для таможни
+              +e.item
+                +e.A.link(href="page.html") Допуски СРО
+              +e.item
+                +e.A.link(href="page.html") Международные сертификаты
+          // Contacts header
+          +b.contacts-header
+            +e.call(href="#") Он-лайн звонок
+            +e.A.link--tel1(href="tel:+73433284436", target="_blank") +7 (343) 328-44-36
+            +e.A.link--tel2(href="tel:+73433116280", target="_blank") +7 (343) 311-62-80
+            +e.A.link--email(href="mailto:info@gostestural.ru", target="_blank") info@gostestural.ru
+            // City
+            +b.city
+              +e.A.name(href="#") Екатеринбург
+              +e.UL.dropdown
+                +e.item(data-email= "info@gortestural.ru", data-prefix= "+7 (343) ", data-tel1= "328-44-36", data-tel2= "311-62-80") Екатеринбург
+                +e.item(data-email= "74@gortestural.ru", data-prefix= "+7 (351) ", data-tel1= "216-06-27") Челябинск
+                +e.item(data-email= "72@gortestural.ru", data-prefix= "+7 (345) ", data-tel1= "249-42-27") Тюмень
+                +e.item(data-email= "81@gortestural.ru", data-prefix= "+7 (342) ", data-tel1= "259-68-29") Пермь
+                +e.item(data-email= "86@gortestural.ru", data-prefix= "+7 (346) ", data-tel1= "227-02-41") Сургут
+                +e.item(data-email= "02@gortestural.ru", data-prefix= "+7 (347) ", data-tel1= "264-19-52") Уфа
+                +e.item(data-email= "45@gortestural.ru", data-prefix= "+7 (352) ", data-tel1= "222-23-26") Курган
 
-      .col-xs-12.col-sm-6.col-md-3.col-xl-2
-        // Contacts header
-        +b.contacts-header
-          +e.call(href="#") Он-лайн звонок
-          +e.A.link--tel1(href="tel:+73433284436", target="_blank") +7 (343) 328-44-36
-          +e.A.link--tel2(href="tel:+73433116280", target="_blank") +7 (343) 311-62-80
-          +e.A.link--email(href="mailto:info@gostestural.ru", target="_blank") info@gostestural.ru
-          // City
-          +b.city
-            +e.A.name(href="#") Екатеринбург
-            +e.UL.dropdown
-              +e.item(data-email= "info@gortestural.ru", data-prefix= "+7 (343) ", data-tel1= "328-44-36", data-tel2= "311-62-80") Екатеринбург
-              +e.item(data-email= "74@gortestural.ru", data-prefix= "+7 (351) ", data-tel1= "216-06-27") Челябинск
-              +e.item(data-email= "72@gortestural.ru", data-prefix= "+7 (345) ", data-tel1= "249-42-27") Тюмень
-              +e.item(data-email= "81@gortestural.ru", data-prefix= "+7 (342) ", data-tel1= "259-68-29") Пермь
-              +e.item(data-email= "86@gortestural.ru", data-prefix= "+7 (346) ", data-tel1= "227-02-41") Сургут
-              +e.item(data-email= "02@gortestural.ru", data-prefix= "+7 (347) ", data-tel1= "264-19-52") Уфа
-              +e.item(data-email= "45@gortestural.ru", data-prefix= "+7 (352) ", data-tel1= "222-23-26") Курган
-
-  +e.dropdown--product-type
-    .container      
+  +b.menu-dropdown--product-type
+    +e.inner.container      
       // Product type dropdown
       +b.UL.product-type-dropdown
         +e.item
@@ -277,10 +277,10 @@ include ../abstracts/bemto/bemto.pug
               +e.A.link(href="page.html") Реестр медицинских изделий и организаций
             +e.item 
               +e.A.link(href="page.html") Реестр зарегистрированных нотификаций (уведомлений)
-        +e.A.close(href="#")
+      +e.A.close(href="#")
 
-  +e.dropdown--document-type
-    .container      
+  +b.menu-dropdown--document-type
+    +e.inner.container      
       // Document type dropdown
       +b.UL.document-type-dropdown
         +e.item
@@ -399,7 +399,7 @@ include ../abstracts/bemto/bemto.pug
               +e.A.link(href="page.html") Тендерные закупки
         +e.item
           +e.A.link(href="page.html") Допуск СРО
-        +e.A.close(href="#")
+      +e.A.close(href="#")
 
 
 

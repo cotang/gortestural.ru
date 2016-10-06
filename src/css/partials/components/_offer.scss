@@ -8,6 +8,9 @@
   &__item{
     display: flex;
     margin-bottom: 40px;
+    @include mq($from:xs, $until:md){
+      margin-bottom: 60px;
+    }
     &:nth-of-type(1){
       .offer__icon:before{
         @include sprite($s-offer-card);
@@ -48,9 +51,19 @@
       top: 0;
       left: 0;
       display: inline-block;
+      @include mq($from:xs, $until:md){
+        transform: scale(0.8);
+        top: -10px;
+      }
     }
   }
   &__text{
     font-size: $font-size-subtitle;
+    @include mq($from:md, $until:xl){
+      font-size: $font-size-promo;
+    }
+    @include mq($from:xs, $until:md){
+      font-size: $font-size;
+    }
   }
 }

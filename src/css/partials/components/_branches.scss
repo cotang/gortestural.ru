@@ -5,6 +5,9 @@
     font-size: $font-size-title;
     margin: 65px 0 80px;
     position: relative;
+    @include mq($from:xs, $until:md){
+      font-size: $font-size-title-24;
+    }
     &:after{
       content: '';
       position: absolute;
@@ -61,6 +64,9 @@
       top: 40px;
       left: 40px;
       transform: translate(-50%, -50%);
+      @include mq($from:xs, $until:md){
+        top: 50px;
+      }
     }
   }
   &__type{

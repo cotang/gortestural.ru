@@ -1,9 +1,15 @@
 .news-section{
-  margin-bottom: 50px;
+  margin: 50px 0;
+  @include mq($from:xs, $until:md){
+    margin: 20px 0;
+  }
   &__title{
     font-size: $font-size-title;
-    margin: 50px 0 40px;
+    margin: 0 0 40px;
     position: relative;
+    @include mq($from:xs, $until:lg){
+      font-size: $font-size-title-24;
+    }
     &:after{
       content: '';
       position: absolute;

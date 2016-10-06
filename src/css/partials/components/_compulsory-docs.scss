@@ -28,5 +28,8 @@
   }
   .btn{
     text-transform: uppercase;
+    @include mq($from:xs, $until:xl){
+      font-size: $font-size;
+    }
   }
 }

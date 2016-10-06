@@ -5,6 +5,9 @@
   &__title{
     font-size: $font-size-title;
     margin: 45px 0 35px;
+    @include mq($from:xs, $until:md){
+      font-size: $font-size-title-24;
+    }
   }
   &__gallery{
     padding: 0 60px;
