@@ -131,8 +131,8 @@ jQuery(document).ready(function($){
     dots: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
+    // autoplay: true,
+    // autoplaySpeed: 4000,
     centerMode: true,
     centerPadding: '0',
     responsive: [
@@ -266,7 +266,22 @@ jQuery(document).ready(function($){
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: '0',      
-    // variableWidth: true
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
 
