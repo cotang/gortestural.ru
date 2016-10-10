@@ -1,0 +1,17 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--contacts
+    .container
+      .row
+        .col-xs-12.col-md-8.col-xl-9
+          +b.SECTION.breadcrumbs
+            a(href="index.html") Сертификационный центр Гортестурал
+            ='>'
+            span Контакты
+          // Contacts
+          include partials/components/_contacts.pug
+
+        .col-xs-12.col-md-4.col-xl-3
+          // Sidebar
+          include partials/components/_sidebar.pug

@@ -153,7 +153,7 @@ gulp.task('sprites', function () {
       .pipe(spritesmith({
         imgName: 'png-sprite.png',
         imgPath: '../img/png-sprite.png',
-        padding: 2,
+        padding: 4,
         cssFormat: 'scss_maps',
         algorithm: 'binary-tree',
         cssName: '_png-sprite.scss',

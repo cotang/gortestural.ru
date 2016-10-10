@@ -9,7 +9,7 @@
     }
   }
   &__text{
-    color: $text-color-grey3;
+    // color: $text-color-grey3;
   }
   &__img{
     width: 100%;
@@ -19,5 +19,7 @@
       height: 100%;
     }
   }
-
+  a{
+    font-weight: 600;
+  }
 }

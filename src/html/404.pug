@@ -1,0 +1,21 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--404
+    .container
+      .row
+        .col-xs-12
+          // Content
+          +b.SECTION.content
+            +e.H1.title Ничего не найдено
+            +e.text           
+              p К сожалению по вашему запросу ничего не найдено.
+              p Воспользуйтесь полем поиска и задайте вопрос нашему менеджеру.
+            +e.search  
+              // Search
+              +b.search
+                +e.FORM.form
+                  +e.INPUT.input(type='text', name='Поиск', placeholder='Поиск...')
+
+
+

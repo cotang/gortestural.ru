@@ -1,0 +1,21 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--form
+    .container
+      .row
+        .col-xs-12.col-md-8.col-xl-9
+          // Content
+          +b.SECTION.content
+            +e.H1.title Заявка на получение сертификата
+            +e.text           
+              p Текст об отправке формы
+            +e.form
+              include partials/components/_form--modal.pug
+
+        .col-xs-12.col-md-4.col-xl-3
+          // Sidebar
+          include partials/components/_sidebar.pug
+
+
+

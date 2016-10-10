@@ -1,12 +1,12 @@
-extends partials/templates/template.pug
+extends partials/templates/_template.pug
 
 block content
-  +b.SECTION.page
+  +b.SECTION.page--single-question
     .container
       .row
         .col-xs-12.col-xl-8
           +b.SECTION.breadcrumbs
-            a(href="index.html") Сертификационный центр Промотест
+            a(href="index.html") Сертификационный центр Гортестурал
             ='>'
             a(href="page-questions.html") Вопросы и ответы
             ='>'
@@ -20,16 +20,27 @@ block content
                 +e.text
                   p Я изготавливаю авторские игрушки из полимерной глины, меха, проволоки, паралона и разукрашиваю акриловыми красками. Необходимы ли мне какие нибудь сертификаты на продажу данных изделий?
               +e.answer
-                +e.person Анастасия, +7 (495) 783-29-26, otdel@promotest.info 
+                +e.person Анастасия, +7 (495) 783-29-26, info@gostestural.ru 
                 +e.text
                   p Добрый день,Оксана! 
                   p Если у вас данная продукция будет продаваться как сувенир, то вы на этикетке должны указывать что у вас сувенирная продукция. В РФ она не подлежит обязательной сертификации.
                   p В таком случае можно оформить добровольной сертификат и отказное письмо, что продукция не подлежит обязательной сертификации.
                   p Если вы будете позиционировать как игрушки и с ними будут играть дети,то данная продукция подлежит оформлению сертификата по Тех.Регламенту Таможенного Союза "О безопасности игрушек".
                   p Для просчета стоимости необходимо предоставить полное описание с указанием тех.характеристик,вида материала из которого изготовлена каждая игрушка и возраст детей.
-            +e.A.link(href="page-questions.html") Назад
-        .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3.col-xl-4.offset-xl-0
-          include partials/components/sidebar.pug
+            +e.A.link(href="page-questions.html") << Назад
 
+        .col-xs-12.col-md-4.col-xl-3
+          include partials/components/_sidebar.pug
 
+    // Procedure
+    include partials/components/_procedure.pug           
+    // Form
+    +e.page__form--wide
+      .container       
+        // Form application
+        include partials/components/_form--wide.pug 
+    // Gratitude
+    include partials/components/_gratitude.pug 
+    // Clients
+    include partials/components/_clients.pug 
 

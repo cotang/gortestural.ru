@@ -1,15 +1,17 @@
-- var application = [{name: 'application', id: 'formApplication', title : 'Введите продукцию, и мы подскажем, что на нее оформить', application: true, button: 'Отправить', success: 'Ваша заявка отправлена'}] 
-- var question = [{name: 'question', id: 'formQuestion', title : 'Задать вопрос', question: true, button: 'Отправить', success: 'Ваш вопрос отправлен'}] 
-- var review = [{name: 'review', id: 'formReview', title : 'Напишите отзыв о нашей работе', review: true, button: 'Отправить отзыв', success: 'Отзыв успешно отправлен'}] 
+- var index = [{name: 'application', type: 'index', title : 'Введите продукцию, и мы подскажем, что на нее оформить', button: 'Отправить', success: 'Ваша заявка отправлена'}] 
+- var modal = [{name: 'application', type: 'modal', title : 'Модальное окно', button: 'Отправить', success: 'Ваша заявка отправлена'}] 
+- var wide = [{name: 'application', type: 'wide', title : 'Закажи документ прямо сейчас!', button: 'Заказать документ', success: 'Ваша заявка отправлена'}] 
+//- var question = [{name: 'question', id: 'formQuestion', title : 'Задать вопрос', question: true, button: 'Отправить', success: 'Ваш вопрос отправлен'}] 
+- var review = [{name: 'review', type: 'review', title : 'Напишите отзыв о нашей работе', button: 'Отправить отзыв', success: 'Отзыв успешно отправлен'}] 
 
 mixin form(items)
   each item in items
     +b.SECTION(class= 'form--' + item.name)
-      form(action='', method='', id= item.id)
+      form(action='', method='')
         +e.A.close(href='#')
         +e.H3.title #{item.title}
 
-        if item.application
+        if item.type == 'index'
           .form-group.field-name.required
             +e.P.text Ваше имя
               span.color-red *
@@ -26,14 +28,31 @@ mixin form(items)
             +e.TEXTAREA.textarea(type='text', name='Запрос') 
             p.help-block Ошибка заполнения поля формы
 
-        if item.question
+        if item.type == 'modal'
           .form-group.field-name.required
             +e.P.text Ваше имя
               span.color-red *
             +e.INPUT.input(type='text', name='Имя')
             p.help-block Ошибка заполнения поля формы
           .form-group.field-email-tel.required
-            +e.P.text Ваш e-mail или телефон
+            +e.P.text Ваш e-mail/телефон
+              span.color-red *
+            +e.INPUT.input(type='text', name='Email/телефон')
+            p.help-block Ошибка заполнения поля формы
+          .form-group.field-question.required
+            +e.P.text Продукция/документ/ваш вопрос
+              span.color-red *
+            +e.TEXTAREA.textarea(type='text', name='Вопрос') 
+            p.help-block Ошибка заполнения поля формы
+
+        if item.type == 'wide'
+          .form-group.field-name.required
+            +e.P.text Ваше имя
+              span.color-red *
+            +e.INPUT.input(type='text', name='Имя')
+            p.help-block Ошибка заполнения поля формы
+          .form-group.field-email-tel.required
+            +e.P.text Ваш e-mail/телефон
               span.color-red *
             +e.INPUT.input(type='text', name='Email/телефон')
             p.help-block Ошибка заполнения поля формы
@@ -43,7 +62,7 @@ mixin form(items)
             +e.TEXTAREA.textarea(type='text', name='Вопрос') 
             p.help-block Ошибка заполнения поля формы
 
-        if item.review
+        if item.type == 'review'
           .form-group.field-name.required
             +e.P.text Ваша компания
               span.color-red *

@@ -1,12 +1,10 @@
 .pagination{
   text-align: left;
-  color: $text-color;
   margin-top: 20px;
   margin-bottom: 20px;
 
   span{
     display: inline-block;
-    // margin-left: 10px;
     margin-right: 10px;
   }
 
@@ -15,7 +13,7 @@
     padding: 5px 10px;
     color: $text-color;
     &:hover, &:focus, &:active{
-      color: $dark-blue;
+      color: $red;
     }
     &--current{
       background-color: $text-color;

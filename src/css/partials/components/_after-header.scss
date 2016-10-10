@@ -159,6 +159,7 @@
     margin: 0;
     list-style-type: none;
     font-size: $font-size-menu;
+    align-items: center;
     display: flex;    
     @include mq($from:xs, $until:lg){
       justify-content: space-between;
@@ -175,6 +176,13 @@
       flex: 0 0 100%;
       margin: 0;
       max-width: initial;
+    }
+  }
+  &__link{
+    display: inline-block;
+    padding: 0 20px;
+    @include mq($from:xs, $until:xl){
+      padding: 0;
     }
   }
 }

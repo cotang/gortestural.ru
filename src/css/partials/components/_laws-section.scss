@@ -20,15 +20,9 @@
       width: 80px;
     }
   }
-}
-
-.law{
-  margin-bottom: 30px;
-  &__title{
+  &__link{
+    display: block;
     font-weight: $bold;
-    margin: 15px 0 10px;
-  }
-  &__text{
-    font-size: $font-size-small;
+    margin-bottom: 20px;    
   }
 }

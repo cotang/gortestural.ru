@@ -65,6 +65,7 @@ $mq-breakpoints: (
 
 $white:                       #ffffff;
 $black:                       #000000;
+$text:                        #444444;
 
 $darkest-grey:                #111111;
 $darker-grey:                 #252525;
@@ -85,7 +86,7 @@ $error:                       #d9534f;
 // Colors in use
 
 $body-bg:                     $white;
-$text-color:                  $black;
+$text-color:                  $text;
 
 $link-color:                  $text-color;
 $link-color--hover:           $red;

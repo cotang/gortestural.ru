@@ -6,25 +6,20 @@
     margin: 25px 0 40px;
     font-weight: $bold;
     font-size: $font-size-title;
-    color: $dark-blue;
     // @include mq($from:xs, $until:sm){
     //   font-size: $font-size-promo;
     // }     
   }
   &__subtitle{
     font-weight: $bold;
-    font-size: $font-size-subtitle;
-    color: $dark-blue;    
+    font-size: $font-size-subtitle;    
   }
   &__link{
-    display: inline-block;
-    font-size: $font-size-promo;
-    color: $dark-blue;  
+    display: inline-block; 
   } 
   &__answer{
-    background-color: $grey-bg;
-    padding: 10px;
-    font-size: $font-size-content;
+    background-color: $lightest-grey;
+    padding: 10px 20px;
   } 
   &__person{
     font-weight: $semibold;

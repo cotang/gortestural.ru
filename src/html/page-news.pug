@@ -1,12 +1,12 @@
-extends partials/templates/template.pug
+extends partials/templates/_template.pug
 
 block content
-  +b.SECTION.page
+  +b.SECTION.page--news
     .container
       .row
-        .col-xs-12.col-xl-8
+        .col-xs-12.col-md-8.col-xl-9
           +b.SECTION.breadcrumbs
-            a(href="index.html") Сертификационный центр Промотест
+            a(href="index.html") Сертификационный центр Гортестурал
             ='>'
             span Новости
           // Content
@@ -15,30 +15,40 @@ block content
             // News
             +e.news
               +b.ARTICLE.news
-                +e.date 18.08.2016
                 +e.H2.subtitle
                   a(href="single-news.html") Сертификация цемента стала обязательной
+                +e.date 18.08.2016
                 +e.excerpt Начиная с 7 марта на территории России стала обязательной сертификация цемента – это регламентируется Письмом Минпромторга, которое было опубликовано 20 февраля 2016 года, а также ПП РФ №930 от 3 сентября 2015 года. Согласно указанному Постановлению с 7 марта обязательной оценке качества стали подлежать такие виды цемента как ... 
                 +e.A.more-link(href="single-news.html") Подробнее
               +b.ARTICLE.news  
-                +e.date 18.08.2016
                 +e.H2.subtitle
                   a(href="single-news.html") Россия ограничила поставки белорусской продукции на российский рынок
+                +e.date 18.08.2016
                 +e.excerpt К комиссии ЕАЭК 10 февраля поступило обращение от службы по фитосанитарному и ветеринарному контролю о временных ограничениях на ввоз на территорию России товаров, которые были произведены ОАО «Слуцкий сыродельный комбинат», его любанскими и копыльскими филиалами в республике Беларусь, в связи с многочисленными ... 
                 +e.A.more-link(href="single-news.html") Подробнее                
               +b.ARTICLE.news
-                +e.date 18.08.2016  
                 +e.H2.subtitle
                   a(href="single-news.html") 1 января введено эмбарго на ряд турецких товаров
+                +e.date 18.08.2016
                 +e.excerpt В.Путин подписал указ №583 от 28 ноября 2015г. согласно которому начиная с 1 января 2016 года введены специальные меры экономического зарактера в отношении Турецкой республики. В указе утверждается список продукции, материалов и сырья запрещённых к импорту в РФ. В список вошли такая пищевая продукция как томаты, капуста, огурцы, ... 
                 +e.A.more-link(href="single-news.html") Подробне
               +b.SECTION.pagination
                 span Страницы:
-                +e.A.number--current(href="page-questions.html") 1
-                +e.A.number(href="page-questions.html") 2
-                +e.A.number(href="page-questions.html") 3
-        .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3.col-xl-4.offset-xl-0
-          include partials/components/sidebar.pug
+                +e.A.number--current(href="page-news.html") 1
+                +e.A.number(href="page-news.html") 2
+                +e.A.number(href="page-news.html") 3
+        .col-xs-12.col-md-4.col-xl-3
+          // Sidebar
+          include partials/components/_sidebar.pug
 
-
-
+    // Procedure
+    include partials/components/_procedure.pug           
+    // Form
+    +e.page__form--wide
+      .container       
+        // Form application
+        include partials/components/_form--wide.pug 
+    // Gratitude
+    include partials/components/_gratitude.pug 
+    // Clients
+    include partials/components/_clients.pug 

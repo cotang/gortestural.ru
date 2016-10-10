@@ -1,0 +1,36 @@
+extends partials/templates/_template.pug
+
+
+block content
+  +b.SECTION.page--questions
+    .container
+      .row
+        .col-xs-12.col-md-8.col-xl-9
+          +b.SECTION.breadcrumbs
+            a(href="index.html") Сертификационный центр Гортестурал
+            ='>'
+            span Вопросы и ответы
+          // Content
+          +b.SECTION.content
+            +e.H1.title Вопросы и ответы
+            +e.form
+              include partials/components/_form--modal.pug
+            // Questions
+            +e.content__questions
+              include partials/components/_questions.pug
+
+        .col-xs-12.col-md-4.col-xl-3
+          // Sidebar
+          include partials/components/_sidebar.pug
+
+    // Procedure
+    include partials/components/_procedure.pug           
+    // Form
+    +e.page__form--wide
+      .container       
+        // Form application
+        include partials/components/_form--wide.pug 
+    // Gratitude
+    include partials/components/_gratitude.pug 
+    // Clients
+    include partials/components/_clients.pug 

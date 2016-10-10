@@ -1,0 +1,37 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--single-gratitude
+    .container
+      .row
+        .col-xs-12.col-md-8.col-xl-9
+          +b.SECTION.breadcrumbs
+            a(href="index.html") Сертификационный центр Гортестурал
+            ='>'
+            span Отзыв от "ITL строительная компания"
+          // Content
+          +b.SECTION.content
+            +b.ARTICLE.single-gratitude
+              +e.H1.title Отзыв от "ITL строительная компания"
+              +e.logo
+                img(src= "img/client1.png" alt='logo' title='logo')
+              +e.text
+                p В рамках заботы о потребительских правах потребителей в России для большинства видов товаров предусмотрен особый сертификационный контроль. В зависимости от категории и предназначения исследование основных параметров продукции осуществляется в различных системах: Госстандарт, МЧС, Роспотребнадзор, Ростехнадзор и др. 
+                  a(href="#") ссылка на какую-нибудь страницу.
+                p Сертификация – это ряд мероприятий, направленных на предоставление потребителям гарантий относительно качества и безопасности изделий, наполняющих внутренний рынок страны. В основе лежат соответствующие акты, определяющие нормативы и стандарты для производимых товаров.
+
+        .col-xs-12.col-md-4.col-xl-3
+          include partials/components/_sidebar.pug
+
+    // Procedure
+    include partials/components/_procedure.pug           
+    // Form
+    +e.page__form--wide
+      .container       
+        // Form application
+        include partials/components/_form--wide.pug 
+    // Gratitude
+    include partials/components/_gratitude.pug 
+    // Clients
+    include partials/components/_clients.pug 
+

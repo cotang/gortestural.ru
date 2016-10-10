@@ -7,20 +7,22 @@
     justify-content: space-between;    
   }
   &__info{
-    flex: 0 0 37%;
-    max-width: 37%;
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-right: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     @include mq($from:xs, $until:xl){
+      padding-right: 0;
       flex: 0 0 100%;
       max-width: 100%;
       justify-content: center;
     }
   }
   &__wrapper{
-    flex: 0 0 63%;
-    max-width: 63%;
+    flex: 0 0 60%;
+    max-width: 60%;
     display: flex;
     justify-content: space-between;
     @include mq($from:xs, $until:xl){
@@ -72,6 +74,7 @@
     color: $text-color-grey1;
     display: inline-block;
     padding: 10px 0;
+    outline: none;
     &:hover, &:focus{
       color: $link-color-white;
     }

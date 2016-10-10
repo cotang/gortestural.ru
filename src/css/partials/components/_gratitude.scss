@@ -42,8 +42,9 @@
       height: 12px;
       color: transparent;
       border: none;
-      background-color: $lightest-grey;
+      background-color: $lighter-grey;
       border-radius: 50%;
+      outline: none;
     }
   }
   .slick-active{
@@ -94,7 +95,19 @@
   }
   &__link{
     font-size: $font-size-small;
-    text-decoration: underline;
   }
+}
 
+.single-gratitude{
+  background-color: $lightest-grey;
+  margin-top: 20px;
+  padding: 10px 20px 10px;
+  &__title{
+    margin: 10px 0 20px;
+    font-size: $font-size-h1;
+    font-weight: $bold;
+  }
+  &__text{
+    
+  }
 }

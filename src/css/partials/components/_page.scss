@@ -1,13 +1,11 @@
 .page{
   text-align: left;
-
+  
   &__form{
     &--aside{
       margin-top: 20px;
       margin-bottom: 20px;
-    //   width: 100%;
-    //   max-width: 500px;
-    //   margin: 20px auto;
+      
       .form{
         padding-top: 15px;
       }
@@ -30,20 +28,30 @@
 
     &--wide{
       background-color: $lighter-grey;
+      .form{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
       form{
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
         margin: 0 -15px;
+        columns: 2;
+        @include mq($from:xs, $until:md){
+          columns: initial;
+        }
       }
       .form__close{
         display: none;
       }
       .form__title{
-        padding: 0;
+        padding: 0 15px;
         margin: 0;
         font-weight: $bold;
         font-size: $font-size-title;
-        flex: 0 0 100%;
+        column-span: all;
+        // flex: 0 0 100%;
         @include mq($from:xs, $until:md){
           font-size: $font-size-title-24;
         }
@@ -51,25 +59,26 @@
       .form-group{
         margin: 0;
         padding: 0 15px;
-        flex: 0 0 33%;
-        @include mq($from:xs, $until:md){
-          flex: 0 0 100%;
-        }
-        &:nth-of-type(2){
-          order: 1;
-          @include mq($from:xs, $until:md){
-            order: unset;
-          }          
-        }
+        // flex: 0 0 50%;
+        // @include mq($from:xs, $until:md){
+        //   flex: 0 0 100%;
+        // }
+        // &:nth-of-type(2){
+        //   order: 1;
+        //   @include mq($from:xs, $until:md){
+        //     order: unset;
+        //   }          
+        // }
         &:last-of-type{
-          flex: 0 0 100%;
-          order: 2;
+          column-span: all;
+          // flex: 0 0 100%;
+          // order: 2;
           margin-top: 20px;
           margin-bottom: 30px;
         }
       }
       .form__textarea{
-        height: 80px;
+        height: 93px;
       }
       .btn--form{
         text-transform: uppercase;

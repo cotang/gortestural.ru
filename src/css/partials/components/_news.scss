@@ -2,28 +2,21 @@
   margin-top: 20px;
   margin-bottom: 50px;
   &__date{
-    font-size:  $font-size-small;
+    font-size:  $font-size-menu;
+    margin-bottom: 10px;
   }
   &__title{
     margin: 25px 0 30px;
     font-weight: $bold;
     font-size: $font-size-title;
-    color: $dark-blue;
     // @include mq($from:xs, $until:sm){
     //   font-size: $font-size-promo;
     // }     
   }
   &__subtitle{
+    margin: 10px 0;
     font-weight: $bold;
-    font-size: $font-size-subtitle;
-    color: $dark-blue;    
-  }
-
-  &__more-link{
-    display: block;
-    margin-top: 15px;
-    font-size:  $font-size-small;  
-    color: $dark-blue;
+    font-size: $font-size-subtitle;  
   }
 }
 

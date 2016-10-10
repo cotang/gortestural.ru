@@ -11,7 +11,7 @@
   }
   &__gallery{
     padding: 0 60px;
-    @include mq($from:xs, $until:sm){
+    @include mq($from:xs, $until:md){
       padding: 0 20px;
     }
   }
