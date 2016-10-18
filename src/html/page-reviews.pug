@@ -12,6 +12,15 @@ block content
           // Content
           +b.SECTION.content
             +e.H1.title Отзывы
+            +e.UL.list
+              +e.item
+                +e.link(href='#reviews__gallery') Благодарственные письма клиентов
+              +e.item
+                +e.link(href='#reviews__flamp') Отзывы с flamp
+              +e.item
+                +e.link(href='#reviews__form') Оставьте свой отзыв
+              +e.item
+                +e.link(href='#reviews__articles') Отзывы наших клиентов на нашем сайте
             include partials/components/_reviews.pug
         .col-xs-12.col-md-4.col-xl-3
           include partials/components/_sidebar.pug

@@ -37,5 +37,11 @@
       content: '- ';
     }
   }
+  &__link{
+    color: $text-color-white;
+    &:hover, &:focus {
+      color: $text-color-white;
+    }
+  }
 }
 

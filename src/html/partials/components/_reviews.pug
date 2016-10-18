@@ -3,7 +3,7 @@ include ../abstracts/bemto/bemto.pug
 // Reviews
 +b.SECTION.reviews 
   // Gallery
-  +e.gallery
+  +e.gallery(id='reviews__gallery')
     - for (var i = 1; i < 5; ++i){
       +e.slide
         +e.img
@@ -17,13 +17,13 @@ include ../abstracts/bemto/bemto.pug
           img(src= "img/reviews/ip_balanova.jpg" alt='text' title='text')
     - }
   // Flamp
-  +e.flamp
+  +e.flamp(id='reviews__flamp')
     h2 Блок с отзывами с flamp
   // Form
-  +e.form
+  +e.form(id='reviews__form')
     include _form--review.pug 
   // Articles   
-  +e.reviews__articles
+  +e.reviews__articles(id='reviews__articles')
     +b.ARTICLE.review
       +e.H2.title Благодарим за плодотворное сотрудничество
       +e.P.person Компания: 

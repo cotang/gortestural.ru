@@ -44,9 +44,9 @@
     }
     .general-menu__link{
       padding: 0 0 0 15px;
-      &--active{
+      &:hover, &:focus {
         color: $red;
-      }      
+      }     
     }    
   }
 }

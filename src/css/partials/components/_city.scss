@@ -2,6 +2,7 @@
   padding: 0 10px;
   margin-left: -10px;
   position: relative;
+  border: 1px solid transparent;
   &--active{
     background-color: $white;
     border: 1px solid $light-grey;
@@ -22,6 +23,10 @@
       content: '▼';
       font-size: 0.7em;
       margin-left: 5px;      
+    }
+
+    &--active{
+      color: $red;
     }
   }
   &__dropdown{

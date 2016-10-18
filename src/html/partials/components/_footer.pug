@@ -19,7 +19,7 @@ include ../abstracts/bemto/bemto.pug
             +b.A.btn--small(href="page-landing.html") ХАССП
           +e.item--search
             // Search
-            +b.search--footer
+            +b.search
               +e.FORM.form
                 +e.INPUT.input(type='text', name='Поиск', placeholder='поиск')
               +e.A.icon(href="javascript:void(0);")
@@ -32,20 +32,34 @@ include ../abstracts/bemto/bemto.pug
         +b.SECTION.services-section
           +e.H3.title Наши услуги
           +e.UL.list
-            +e.item сертификаты соответствия ГОСТ Р;
-            +e.item сертификаты соответствия ТР ТС;
-            +e.item сертификаты на услуги;
-            +e.item сертификаты происхождения;
-            +e.item сертификаты соответствия продукции;
-            +e.item различные виды деклараций; 
-            +e.item сертификация систем менеджмента качества;
-            +e.item подтверждения санитарно-эпидемиологического и гигиенического соответствия;
-            +e.item подтверждение соответствия в области пожарной безопасности;
-            +e.item разрешительные документы Ростехнадзора;
-            +e.item допуск СРО, аттестация технологии сварки НАКС;
-            +e.item лицензирование в области МЧС;
-            +e.item разработка нормативно-технической документации и многое другое;
-            +e.item регистрация штрих-кодов DiSAI.
+            +e.item 
+              +e.link(href="page.html") сертификаты соответствия ГОСТ Р;
+            +e.item 
+              +e.link(href="page.html") сертификаты соответствия ТР ТС;
+            +e.item 
+              +e.link(href="page.html") сертификаты на услуги;
+            +e.item 
+              +e.link(href="page.html") сертификаты происхождения;
+            +e.item 
+              +e.link(href="page.html") сертификаты соответствия продукции;
+            +e.item 
+              +e.link(href="page.html") различные виды деклараций; 
+            +e.item 
+              +e.link(href="page.html") сертификация систем менеджмента качества;
+            +e.item 
+              +e.link(href="page.html") подтверждения санитарно-эпидемиологического и гигиенического соответствия;
+            +e.item 
+              +e.link(href="page.html") подтверждение соответствия в области пожарной безопасности;
+            +e.item 
+              +e.link(href="page.html") разрешительные документы Ростехнадзора;
+            +e.item 
+              +e.link(href="page.html") допуск СРО, аттестация технологии сварки НАКС;
+            +e.item 
+              +e.link(href="page.html") лицензирование в области МЧС;
+            +e.item 
+              +e.link(href="page.html") разработка нормативно-технической документации и многое другое;
+            +e.item 
+              +e.link(href="page.html") регистрация штрих-кодов DiSAI.
       .col-xs-12.col-sm-6.col-xl-3.pull-xl-6
         // Logo
         +b.A.logo(href="index.html") 
@@ -93,7 +107,7 @@ include ../abstracts/bemto/bemto.pug
     .row
       +e.flex.col-xs-12
         +e.copyright © 2016 
-          a(href="index.html") http://gortestural.ru.
+          a(href="index.html") http://gortestural.ru
           span Все права защищены
         // Nav menu footer
         +b.NAV.general-menu--footer

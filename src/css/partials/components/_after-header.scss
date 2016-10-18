@@ -218,6 +218,7 @@
 .hamburger{
   display: inline-block;
   @include sprite($s-hamburger);
+  // transition-timing-function: linear;
   &:hover, &:focus{
     transform: scale(1.2);
   }
@@ -246,7 +247,10 @@
     top: 0;
     right: 0;
     transform: translateX(100%);
-     
+    &:active{
+      @include sprite($s-close-red);
+      transition: none;
+    }     
     @include mq($from:xs, $until:xl){
       transform: none;
     }

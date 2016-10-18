@@ -20,12 +20,17 @@ jQuery(document).ready(function($){
   });
 
   /* header раскрытие списка городов */
+  $('.city__name').mouseenter(function(){
+    $(this).css("color", "#dc0e0f"); 
+  });
   $('.city__name').click(function(e) { 
-      e.preventDefault();    
+      e.preventDefault();  
+      // $(this).addClass('city__name--active');  
       $(this).closest('.city').find('.city__dropdown').toggle();
       $(this).closest('.city').toggleClass('city--active');
   });
   $('.city__dropdown').mouseleave(function(){
+    $(this).closest('.city').find('.city__name').css("color", "#444"); 
     $(this).fadeOut();
     $(this).closest('.city').removeClass('city--active');
   });
@@ -131,8 +136,6 @@ jQuery(document).ready(function($){
     dots: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 4000,
     centerMode: true,
     centerPadding: '0',
     responsive: [
@@ -265,10 +268,11 @@ jQuery(document).ready(function($){
     slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: '0',      
+    centerPadding: '0', 
+    variableWidth: true,     
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1040,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1
@@ -285,14 +289,16 @@ jQuery(document).ready(function($){
   });
 
 
+  /* плавный скролл в page-reviews */
+  $('.page--reviews .content__link').click(function(e){
+      e.preventDefault();
+      var el = $(this).attr('href');
+      $('body').animate({
+      scrollTop: $(el).offset().top}, 500);
+      return false;
+  });
 
 
-
-  /* открывание ответа по ссылке "читать далее" */
-  // $('.question__details').click(function(e) {
-  //     e.preventDefault();
-  //     $(this).closest('.question').find('.question__answer').toggle();      
-  // });
 
 });
 

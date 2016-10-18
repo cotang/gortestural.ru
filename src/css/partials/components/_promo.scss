@@ -29,7 +29,6 @@
     display: block;
     width: auto;
     height: 230px;
-
     position: relative;
     img{
       display: block;
@@ -47,7 +46,7 @@
     text-align: center;
     color: $text-color-white;
     font-family: $font-family-muller;
-    font-weight: $light;
+    // font-weight: $light;
     font-size: $font-size-promo;
     padding: 10px 30px;
     min-height: 70px;
