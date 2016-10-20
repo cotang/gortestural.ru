@@ -44,29 +44,29 @@
     <!-- Header-->
     <header class="header">
       <div class="header__inner container">
-        <div class="header__info">
+        <div class="header__info" itemscope itemtype="http://schema.org/ContactPoint">
           <!-- Language-->
           <div class="language">
             <a class="language__name" href="#">Русский</a>
             <ul class="language__dropdown">
               <li class="language__item">
-                <a class="language__link" href="#">Русский</a>
+                <a class="language__link" href="#" itemprop="availableLanguage">Русский</a>
               </li>
               <li class="language__item">
-                <a class="language__link" href="#">Английский</a>
+                <a class="language__link" href="#" itemprop="availableLanguage">Английский</a>
               </li>
               <li class="language__item">
-                <a class="language__link" href="#">Китайский</a>
+                <a class="language__link" href="#" itemprop="availableLanguage">Китайский</a>
               </li>
             </ul>
           </div>
           <!-- Telephone-->
           <div class="telephone">
-            <a class="telephone__link" href="tel:+73433284436" target="_blank">+7 (343) 328-44-36</a>
+            <a class="telephone__link" href="tel:+73433284436" target="_blank" itemprop="telephone">+7 (343) 328-44-36</a>
           </div>
           <!-- E-mail-->
           <div class="email">
-            <a class="email__link" href="mailto:info@gostestural.ru" target="_blank">info@gostestural.ru</a>
+            <a class="email__link" href="mailto:info@gostestural.ru" target="_blank" itemprop="email">info@gostestural.ru</a>
           </div>
         </div>
         <div class="header__wrapper">
@@ -123,8 +123,8 @@
               </nav>
               <div class="after-header__logo">
                 <!-- Logo-->
-                <a class="logo" href="index.html">
-                  <img src="img/logo-header.png" alt="logo" title="logo">
+                <a class="logo" href="index.html" itemscope="itemscope" itemtype="http://schema.org/Brand">
+                  <img src="img/logo-header.png" alt="logo" title="logo" itemprop="logo">
                 </a>
               </div>
               <!-- Document type menu-->
@@ -140,34 +140,34 @@
           <div class="col-xs-12 col-xl-8">
             <div class="after-header__wrapper">
               <!-- Cert type menu-->
-              <nav class="cert-type-menu">
+              <nav class="cert-type-menu" itemscope itemtype="http://schema.org/Service">
                 <ul class="cert-type-menu__list">
                   <li class="cert-type-menu__item">
-                    <a class="cert-type-menu__link" href="page.html">Сертификаты на производство</a>
+                    <a class="cert-type-menu__link" href="page.html" itemprop="serviceType">Сертификаты на производство</a>
                   </li>
                   <li class="cert-type-menu__item">
-                    <a class="cert-type-menu__link" href="page.html">Разработка тех.документации</a>
+                    <a class="cert-type-menu__link" href="page.html" itemprop="serviceType">Разработка тех.документации</a>
                   </li>
                   <li class="cert-type-menu__item">
-                    <a class="cert-type-menu__link" href="page.html">Документы для таможни</a>
+                    <a class="cert-type-menu__link" href="page.html" itemprop="serviceType">Документы для таможни</a>
                   </li>
                   <li class="cert-type-menu__item">
-                    <a class="cert-type-menu__link" href="page.html">Допуски СРО</a>
+                    <a class="cert-type-menu__link" href="page.html" itemprop="serviceType">Допуски СРО</a>
                   </li>
                   <li class="cert-type-menu__item">
-                    <a class="cert-type-menu__link" href="page.html">Международные сертификаты</a>
+                    <a class="cert-type-menu__link" href="page.html" itemprop="serviceType">Международные сертификаты</a>
                   </li>
                 </ul>
               </nav>
               <!-- Contacts header-->
-              <div class="contacts-header">
+              <div class="contacts-header" itemscope itemtype="http://schema.org/ContactPoint">
                 <a class="contacts-header__call" href="#">Он-лайн звонок</a>
-                <a class="contacts-header__link contacts-header__link--tel1" href="tel:+73433284436" target="_blank">+7 (343) 328-44-36</a>
-                <a class="contacts-header__link contacts-header__link--tel2" href="tel:+73433116280" target="_blank">+7 (343) 311-62-80</a>
-                <a class="contacts-header__link contacts-header__link--email" href="mailto:info@gostestural.ru" target="_blank">info@gostestural.ru</a>
+                <a class="contacts-header__link contacts-header__link--tel1" href="tel:+73433284436" target="_blank" itemprop="telephone">+7 (343) 328-44-36</a>
+                <a class="contacts-header__link contacts-header__link--tel2" href="tel:+73433116280" target="_blank" itemprop="telephone">+7 (343) 311-62-80</a>
+                <a class="contacts-header__link contacts-header__link--email" href="mailto:info@gostestural.ru" target="_blank" itemprop="email">info@gostestural.ru</a>
                 <!-- City-->
                 <div class="city">
-                  <a class="city__name" href="#">Екатеринбург</a>
+                  <a class="city__name" href="#" itemprop="areaServed">Екатеринбург</a>
                   <ul class="city__dropdown">
                     <li class="city__item" data-email="info@gortestural.ru" data-prefix="+7 (343) " data-tel1="328-44-36" data-tel2="311-62-80">Екатеринбург</li>
                     <li class="city__item" data-email="74@gortestural.ru" data-prefix="+7 (351) " data-tel1="216-06-27">Челябинск</li>
@@ -183,236 +183,236 @@
           </div>
         </div>
       </div>
-      <div class="menu-dropdown menu-dropdown--product-type">
+      <div class="menu-dropdown menu-dropdown--product-type" itemscope itemtype="http://schema.org/Service">
         <div class="menu-dropdown__inner container">
           <!-- Product type dropdown-->
           <ul class="product-type-dropdown">
             <li class="product-type-dropdown__item">
-              <a class="product-type-dropdown__link" href="javascript:void(0);">Таможенное оформление</a>
+              <a class="product-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">Таможенное оформление</a>
               <ul class="product-type-submenu">
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Присвоить код ТН ВЭД</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Присвоить код ТН ВЭД</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Таможенное оформление</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Таможенное оформление</a>
                 </li>
               </ul>
             </li>
             <li class="product-type-dropdown__item">
-              <a class="product-type-dropdown__link" href="javascript:void(0);">Сертификация оборудования</a>
+              <a class="product-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">Сертификация оборудования</a>
               <ul class="product-type-submenu">
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на муфты</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на муфты</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на насосы</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на насосы</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на оборудование</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на оборудование</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на установку</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на установку</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на фильтры</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на фильтры</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификация шаровых кранов</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификация шаровых кранов</a>
                 </li>
               </ul>
             </li>
             <li class="product-type-dropdown__item">
-              <a class="product-type-dropdown__link" href="javascript:void(0);">Сертификация строительной продукции</a>
+              <a class="product-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">Сертификация строительной продукции</a>
               <ul class="product-type-submenu">
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на арматуру</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на арматуру</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на бетон</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на бетон</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на блоки</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на блоки</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на выключатели</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на выключатели</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на герметики</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на герметики</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на гипсокартон</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на гипсокартон</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на грунт</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на грунт</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на двери</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на двери</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на изоляцию</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на изоляцию</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на ЖБИ</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на ЖБИ</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на кирпич</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на кирпич</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на лампы</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на лампы</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на линолеум</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на линолеум</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на металлопрокат</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на металлопрокат</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на окна</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на окна</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на оконные блоки</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на оконные блоки</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на ПВХ</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на ПВХ</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на пеноблоки</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на пеноблоки</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на монтажную пену</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на монтажную пену</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на песок</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на песок</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на пиломатериалы</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на пиломатериалы</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на пленку</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на пленку</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на плитку</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на плитку</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на профиль</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на профиль</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на ПФ-115</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на ПФ-115</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на светильники</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на светильники</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на сетку</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на сетку</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на смесь</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на смесь</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на сталь</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на сталь</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на сухие смеси</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на сухие смеси</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на трубы</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на трубы</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на цемент</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на цемент</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на швеллер</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на швеллер</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на шкаф</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на шкаф</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на штукатурку</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на штукатурку</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на щебень</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на щебень</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на эмаль</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на эмаль</a>
                 </li>
               </ul>
             </li>
             <li class="product-type-dropdown__item">
-              <a class="product-type-dropdown__link" href="javascript:void(0);">Сертификация пищевой продукции</a>
+              <a class="product-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">Сертификация пищевой продукции</a>
               <ul class="product-type-submenu">
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на БАД</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на БАД</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на воду</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на воду</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на масло</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на масло</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Документы на молоко</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Документы на молоко</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на овощи</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на овощи</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на хлеб</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на хлеб</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на чай</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на чай</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Документы на мёд</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Документы на мёд</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификация услуг общественного питания</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификация услуг общественного питания</a>
                 </li>
               </ul>
             </li>
             <li class="product-type-dropdown__item">
-              <a class="product-type-dropdown__link" href="javascript:void(0);">Сертификация детской продукции</a>
+              <a class="product-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">Сертификация детской продукции</a>
               <ul class="product-type-submenu">
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на игровые площадки</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на игровые площадки</a>
                 </li>
               </ul>
             </li>
             <li class="product-type-dropdown__item">
-              <a class="product-type-dropdown__link" href="javascript:void(0);">Сертификация продукции легкой промышленности</a>
+              <a class="product-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">Сертификация продукции легкой промышленности</a>
               <ul class="product-type-submenu">
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат соответствия на обувь</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат соответствия на обувь</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на одежду</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на одежду</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на перчатки</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на перчатки</a>
                 </li>
               </ul>
             </li>
             <li class="product-type-dropdown__item">
-              <a class="product-type-dropdown__link" href="javascript:void(0);">Сертификация парфюмерно-косметической продукции</a>
+              <a class="product-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">Сертификация парфюмерно-косметической продукции</a>
               <ul class="product-type-submenu">
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на бижутерию</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на бижутерию</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на косметику</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на косметику</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на косметическое масло</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на косметическое масло</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на парфюмерию</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на парфюмерию</a>
                 </li>
               </ul>
             </li>
             <li class="product-type-dropdown__item">
-              <a class="product-type-dropdown__link" href="javascript:void(0);">Сертификация производства</a>
+              <a class="product-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">Сертификация производства</a>
               <ul class="product-type-submenu">
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на производство</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на производство</a>
                 </li>
               </ul>
             </li>
@@ -420,35 +420,35 @@
               <a class="product-type-dropdown__link" href="javascript:void(0);">Сертификация бытовой химии</a>
               <ul class="product-type-submenu">
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на бытовую химию</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на бытовую химию</a>
                 </li>
               </ul>
             </li>
             <li class="product-type-dropdown__item">
-              <a class="product-type-dropdown__link" href="javascript:void(0);">Сертификация полиграфической и канцелярской продукции</a>
+              <a class="product-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">Сертификация полиграфической и канцелярской продукции</a>
               <ul class="product-type-submenu">
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на книги</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на книги</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Сертификат на клей</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Сертификат на клей</a>
                 </li>
               </ul>
             </li>
             <li class="product-type-dropdown__item">
-              <a class="product-type-dropdown__link" href="javascript:void(0);">Проверка подлинности документов</a>
+              <a class="product-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">Проверка подлинности документов</a>
               <ul class="product-type-submenu">
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Реестр документов на сайте Росаккредитации</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Реестр документов на сайте Росаккредитации</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Реестр Свидетельств о госрегистрации</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Реестр Свидетельств о госрегистрации</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Реестр медицинских изделий и организаций</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Реестр медицинских изделий и организаций</a>
                 </li>
                 <li class="product-type-submenu__item">
-                  <a class="product-type-submenu__link" href="page.html">Реестр зарегистрированных нотификаций (уведомлений)</a>
+                  <a class="product-type-submenu__link" href="page.html" itemprop="offers">Реестр зарегистрированных нотификаций (уведомлений)</a>
                 </li>
               </ul>
             </li>
@@ -461,181 +461,181 @@
           <!-- Document type dropdown-->
           <ul class="document-type-dropdown">
             <li class="document-type-dropdown__item">
-              <a class="document-type-dropdown__link" href="javascript:void(0);">Сертификация и декларирование</a>
+              <a class="document-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">Сертификация и декларирование</a>
               <ul class="document-type-submenu">
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Сертификация продукции</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Сертификация продукции</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Сертификат на услуги</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Сертификат на услуги</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Сертификат происхождения</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Сертификат происхождения</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Сертификат промышленной безопасности</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Сертификат промышленной безопасности</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Сертификат соответствия ГОСТ Р</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Сертификат соответствия ГОСТ Р</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Сертификат соответствия ТР ТС</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Сертификат соответствия ТР ТС</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Сертификат соответствия ТР</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Сертификат соответствия ТР</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Сертификат CE</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Сертификат CE</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Добровольная сертификация</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Добровольная сертификация</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Декларация соответствия ГОСТ Р</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Декларация соответствия ГОСТ Р</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Декларация соответствия Таможенного союза</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Декларация соответствия Таможенного союза</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Декларация соответствия Техническому регламенту</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Декларация соответствия Техническому регламенту</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Декларация связи</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Декларация связи</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Таможенная декларация соответствия</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Таможенная декларация соответствия</a>
                 </li>
               </ul>
             </li>
             <li class="document-type-dropdown__item">
-              <a class="document-type-dropdown__link" href="javascript:void(0);">ISO</a>
+              <a class="document-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">ISO</a>
               <ul class="document-type-submenu">
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Сертификат ИСО 9001</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Сертификат ИСО 9001</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">ИСО 22 000 (ХАССП), HACCP</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">ИСО 22 000 (ХАССП), HACCP</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Сертификат ОХСАС 18001</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Сертификат ОХСАС 18001</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">ИСО 14001</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">ИСО 14001</a>
                 </li>
               </ul>
             </li>
             <li class="document-type-dropdown__item">
-              <a class="document-type-dropdown__link" href="javascript:void(0);">Техническая документация</a>
+              <a class="document-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">Техническая документация</a>
               <ul class="document-type-submenu">
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Обоснование безопасности</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Обоснование безопасности</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Паспорт безопасности вещества</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Паспорт безопасности вещества</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Паспорт изделия</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Паспорт изделия</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Рецептуры</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Рецептуры</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Руководство по эксплуатации</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Руководство по эксплуатации</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Технические условия</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Технические условия</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Технологический регламент</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Технологический регламент</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Технологические инструкции</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Технологические инструкции</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Разработка стандарта организации</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Разработка стандарта организации</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Штрихкоды</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Штрихкоды</a>
                 </li>
               </ul>
             </li>
             <li class="document-type-dropdown__item">
-              <a class="document-type-dropdown__link" href="javascript:void(0);">Пожарная сертификация</a>
+              <a class="document-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">Пожарная сертификация</a>
               <ul class="document-type-submenu">
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Декларация пожарной безопасности</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Декларация пожарной безопасности</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Декларация пожарной безопасности на объект</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Декларация пожарной безопасности на объект</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Сертификат пожарной безопасности</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Сертификат пожарной безопасности</a>
                 </li>
               </ul>
             </li>
             <li class="document-type-dropdown__item">
-              <a class="document-type-dropdown__link" href="javascript:void(0);">Гигиеническое заключение</a>
+              <a class="document-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">Гигиеническое заключение</a>
               <ul class="document-type-submenu">
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Свидетельство о гос. регистрации (СГР)</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Свидетельство о гос. регистрации (СГР)</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Экспертное заключение </a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Экспертное заключение </a>
                 </li>
               </ul>
             </li>
             <li class="document-type-dropdown__item">
-              <a class="document-type-dropdown__link" href="javascript:void(0);">Разрешительные документы</a>
+              <a class="document-type-dropdown__link" href="javascript:void(0);" itemprop="serviceType">Разрешительные документы</a>
               <ul class="document-type-submenu">
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Аттестация технология сварки НАКС</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Аттестация технология сварки НАКС</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Заключение Эксконта</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Заключение Эксконта</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Отказное письмо</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Отказное письмо</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">CБКТС</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">CБКТС</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Одобрение типа ТС</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Одобрение типа ТС</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Лицензия МЧС</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Лицензия МЧС</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Нотификация ФСБ</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Нотификация ФСБ</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Разрешение Ростехнадзора</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Разрешение Ростехнадзора</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Регистрационное удостоверение</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Регистрационное удостоверение</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Регистрация ОПО</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Регистрация ОПО</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Экспертиза промышленной безопасности</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Экспертиза промышленной безопасности</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Озоновое заключение</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Озоновое заключение</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Оформление лицензии на отходы</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Оформление лицензии на отходы</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Регистрация товарного знака</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Регистрация товарного знака</a>
                 </li>
                 <li class="document-type-submenu__item">
-                  <a class="document-type-submenu__link" href="page.html">Тендерные закупки</a>
+                  <a class="document-type-submenu__link" href="page.html" itemprop="offers">Тендерные закупки</a>
                 </li>
               </ul>
             </li>
             <li class="document-type-dropdown__item">
-              <a class="document-type-dropdown__link" href="page.html">Допуск СРО</a>
+              <a class="document-type-dropdown__link" href="page.html" itemprop="offers">Допуск СРО</a>
             </li>
           </ul>
           <a class="menu-dropdown__close" href="#"></a>
@@ -838,15 +838,15 @@
               <!-- Sidebar-->
               <aside class="sidebar">
                 <!-- Manager-->
-                <div class="manager manager--sidebar">
+                <div class="manager manager--sidebar" itemscope itemtype="http://schema.org/Person">
                   <h3 class="manager__title">На ваши вопросы отвечает</h3>
                   <div class="manager__photo">
                     <div class="manager__img">
-                      <img src="img/manager1.jpg" alt="manager" title="manager">
+                      <img src="img/manager1.jpg" alt="manager" title="manager" itemprop="image">
                     </div>
                     <div class="manager-info manager-info--sidebar">
-                      <h3 class="manager-info__name">Анастасия Шушаричева</h3>
-                      <div class="manager-info__position">специалист по сертификации</div>
+                      <h3 class="manager-info__name" itemprop="name">Анастасия Шушаричева</h3>
+                      <div class="manager-info__position" itemprop="jobTitle">специалист по сертификации</div>
                       <div class="manager-info__line">
                         <a class="manager-info__link manager-info__link--icq" href="http://www.icq.com/whitepages/cmd.php?uin=111222333&amp;amp;action=message">111-222-333</a>
                         <a class="manager-info__link manager-info__link--skype" href="skype:skype01">skype01 </a>
@@ -893,25 +893,25 @@
       </section>
     </main>
     <!-- Pre-footer-->
-    <footer class="pre-footer">
+    <footer class="pre-footer" itemscope itemtype="http://schema.org/Service">
       <div class="pre-footer__inner container">
         <div class="row">
           <div class="col-xs-12">
             <ul class="pre-footer__nav">
               <li class="pre-footer__item">
-                <a class="btn btn--small" href="page-landing.html">Сертификация для ИП</a>
+                <a class="btn btn--small" href="page-landing.html" itemprop="serviceType">Сертификация для ИП</a>
               </li>
               <li class="pre-footer__item">
-                <a class="btn btn--small" href="page-landing.html">Сертификация для малого и среднего бизнеса</a>
+                <a class="btn btn--small" href="page-landing.html" itemprop="serviceType">Сертификация для малого и среднего бизнеса</a>
               </li>
               <li class="pre-footer__item">
-                <a class="btn btn--small" href="page-landing.html">Сертификация для крупного бизнеса</a>
+                <a class="btn btn--small" href="page-landing.html" itemprop="serviceType">Сертификация для крупного бизнеса</a>
               </li>
               <li class="pre-footer__item">
-                <a class="btn btn--small" href="page-landing.html">Допуск СРО</a>
+                <a class="btn btn--small" href="page-landing.html" itemprop="serviceType">Допуск СРО</a>
               </li>
               <li class="pre-footer__item">
-                <a class="btn btn--small" href="page-landing.html">ХАССП</a>
+                <a class="btn btn--small" href="page-landing.html" itemprop="serviceType">ХАССП</a>
               </li>
               <li class="pre-footer__item pre-footer__item--search">
                 <!-- Search-->
@@ -933,58 +933,58 @@
         <div class="row">
           <div class="col-xs-12 col-xl-6 push-xl-3">
             <!-- Services Section-->
-            <section class="services-section">
+            <section class="services-section" itemscope itemtype="http://schema.org/Service">
               <h3 class="services-section__title">Наши услуги</h3>
               <ul class="services-section__list">
                 <li class="services-section__item">
-                  <a class="services-section__link" href="page.html">сертификаты соответствия ГОСТ Р;</a>
+                  <a class="services-section__link" href="page.html" itemprop="offers">сертификаты соответствия ГОСТ Р;</a>
                 </li>
                 <li class="services-section__item">
-                  <a class="services-section__link" href="page.html">сертификаты соответствия ТР ТС;</a>
+                  <a class="services-section__link" href="page.html" itemprop="offers">сертификаты соответствия ТР ТС;</a>
                 </li>
                 <li class="services-section__item">
-                  <a class="services-section__link" href="page.html">сертификаты на услуги;</a>
+                  <a class="services-section__link" href="page.html" itemprop="offers">сертификаты на услуги;</a>
                 </li>
                 <li class="services-section__item">
-                  <a class="services-section__link" href="page.html">сертификаты происхождения;</a>
+                  <a class="services-section__link" href="page.html" itemprop="offers">сертификаты происхождения;</a>
                 </li>
                 <li class="services-section__item">
-                  <a class="services-section__link" href="page.html">сертификаты соответствия продукции;</a>
+                  <a class="services-section__link" href="page.html" itemprop="offers">сертификаты соответствия продукции;</a>
                 </li>
                 <li class="services-section__item">
-                  <a class="services-section__link" href="page.html">различные виды деклараций; </a>
+                  <a class="services-section__link" href="page.html" itemprop="offers">различные виды деклараций; </a>
                 </li>
                 <li class="services-section__item">
-                  <a class="services-section__link" href="page.html">сертификация систем менеджмента качества;</a>
+                  <a class="services-section__link" href="page.html" itemprop="offers">сертификация систем менеджмента качества;</a>
                 </li>
                 <li class="services-section__item">
-                  <a class="services-section__link" href="page.html">подтверждения санитарно-эпидемиологического и гигиенического соответствия;</a>
+                  <a class="services-section__link" href="page.html" itemprop="offers">подтверждения санитарно-эпидемиологического и гигиенического соответствия;</a>
                 </li>
                 <li class="services-section__item">
-                  <a class="services-section__link" href="page.html">подтверждение соответствия в области пожарной безопасности;</a>
+                  <a class="services-section__link" href="page.html" itemprop="offers">подтверждение соответствия в области пожарной безопасности;</a>
                 </li>
                 <li class="services-section__item">
-                  <a class="services-section__link" href="page.html">разрешительные документы Ростехнадзора;</a>
+                  <a class="services-section__link" href="page.html" itemprop="offers">разрешительные документы Ростехнадзора;</a>
                 </li>
                 <li class="services-section__item">
-                  <a class="services-section__link" href="page.html">допуск СРО, аттестация технологии сварки НАКС;</a>
+                  <a class="services-section__link" href="page.html" itemprop="offers">допуск СРО, аттестация технологии сварки НАКС;</a>
                 </li>
                 <li class="services-section__item">
-                  <a class="services-section__link" href="page.html">лицензирование в области МЧС;</a>
+                  <a class="services-section__link" href="page.html" itemprop="offers">лицензирование в области МЧС;</a>
                 </li>
                 <li class="services-section__item">
-                  <a class="services-section__link" href="page.html">разработка нормативно-технической документации и многое другое;</a>
+                  <a class="services-section__link" href="page.html" itemprop="offers">разработка нормативно-технической документации и многое другое;</a>
                 </li>
                 <li class="services-section__item">
-                  <a class="services-section__link" href="page.html">регистрация штрих-кодов DiSAI.</a>
+                  <a class="services-section__link" href="page.html" itemprop="offers">регистрация штрих-кодов DiSAI.</a>
                 </li>
               </ul>
             </section>
           </div>
           <div class="col-xs-12 col-sm-6 col-xl-3 pull-xl-6">
             <!-- Logo-->
-            <a class="logo" href="index.html">
-              <img src="img/logo-footer.png" alt="logo" title="logo">
+            <a class="logo" href="index.html" itemscope="itemscope" itemtype="http://schema.org/Brand">
+              <img src="img/logo-footer.png" alt="logo" title="logo" itemprop="logo">
             </a>
             <div class="footer__excerpt">Центр сертификации «Гортест Урал» является одним из российских лидеров в области разработки, оформления и получения разрешительной документации...</div>
             <a class="footer__link footer__link--more" href="page.html">Читать подробнее »</a>
@@ -992,7 +992,7 @@
             <div class="accreditation">
               <div class="accreditation__logo"> </div>
               <div class="accreditation__link-wrapper">
-                <div class="accreditation__line">Аккредитованы в росаакредитации</div>
+                <div class="accreditation__line">Аккредитованы в Росаккредитации</div>
                 <div class="accreditation__line">Член ТТП</div>
                 <div class="accreditation__line">Нам доверяют</div>
               </div>
@@ -1000,28 +1000,28 @@
           </div>
           <div class="col-xs-12 col-sm-6 col-xl-3">
             <!-- Contacts Footer-->
-            <section class="contacts-footer">
+            <section class="contacts-footer" itemscope itemtype="http://schema.org/ContactPoint">
               <h3 class="contacts-footer__title">Наши контакты</h3>
               <ul class="contacts-footer__list">
                 <li class="contacts-footer__line">
                   <div class="contacts-footer__item">Город:</div>
-                  <div class="contacts-footer__item contacts-footer__item--city">Екатеринбург</div>
+                  <div class="contacts-footer__item contacts-footer__item--city" itemprop="areaServed">Екатеринбург</div>
                 </li>
                 <li class="contacts-footer__line">
                   <div class="contacts-footer__item">Адрес:</div>
-                  <div class="contacts-footer__item">"Площадь 1905 года", ул. Ленина, д. 25, БЦ "Европа", оф. 5.124</div>
+                  <div class="contacts-footer__item" itemprop="address">"Площадь 1905 года", ул. Ленина, д. 25, БЦ "Европа", оф. 5.124</div>
                 </li>
                 <li class="contacts-footer__line">
                   <div class="contacts-footer__item">Телефон:</div>
                   <div class="contacts-footer__item">
-                    <a class="contacts-footer__link contacts-footer__link--tel" href="tel:+73433284436" target="_blank">+7 (343) 328-44-36</a>
-                    <a class="contacts-footer__link contacts-footer__link--tel" href="tel:+73433116280" target="_blank">+7 (343) 311-62-80</a>
+                    <a class="contacts-footer__link contacts-footer__link--tel" href="tel:+73433284436" target="_blank" itemprop="telephone">+7 (343) 328-44-36</a>
+                    <a class="contacts-footer__link contacts-footer__link--tel" href="tel:+73433116280" target="_blank" itemprop="telephone">+7 (343) 311-62-80</a>
                   </div>
                 </li>
                 <li class="contacts-footer__line">
                   <div class="contacts-footer__item">E-mail:</div>
                   <div class="contacts-footer__item">
-                    <a class="contacts-footer__link contacts-footer__link--mail" href="mailto:info@gostestural.ru" target="_blank">info@gostestural.ru</a>
+                    <a class="contacts-footer__link contacts-footer__link--mail" href="mailto:info@gostestural.ru" target="_blank" itemprop="email">info@gostestural.ru</a>
                   </div>
                 </li>
                 <li class="contacts-footer__line">
