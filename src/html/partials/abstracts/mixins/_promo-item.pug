@@ -1,9 +1,9 @@
 mixin promoItem(img, alt, title, text)
   .col-xs-12.col-md-4
-    +e.A.item(href="page-landing.html")
+    +e.A.item(href="page-landing.html", itemscope, itemtype="http://schema.org/Service")
       +e.H3.title 
-        span #{title}
+        span(itemprop="serviceType") #{title}
       +e.img
         img(src= "img/" + img alt= alt title= alt)
         +e.text 
-          span #{text}
+          span(itemprop="review") #{text}

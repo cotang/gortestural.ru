@@ -3,23 +3,23 @@ include ../abstracts/bemto/bemto.pug
 // Header
 +b.HEADER.header
   +e.inner.container
-    +e.info
+    +e.info(itemscope, itemtype="http://schema.org/ContactPoint")
       // Language
       +b.language
         +e.A.name(href="#") Русский
         +e.UL.dropdown
           +e.item
-            +e.link(href="#") Русский
+            +e.link(href="#", itemprop="availableLanguage") Русский
           +e.item
-            +e.link(href="#") Английский
+            +e.link(href="#", itemprop="availableLanguage") Английский
           +e.item
-            +e.link(href="#") Китайский
+            +e.link(href="#", itemprop="availableLanguage") Китайский
       // Telephone
       +b.telephone
-        +e.A.link(href="tel:+73433284436", target="_blank") +7 (343) 328-44-36
+        +e.A.link(href="tel:+73433284436", target="_blank", itemprop="telephone") +7 (343) 328-44-36
       // E-mail
       +b.email
-        +e.A.link(href="mailto:info@gostestural.ru", target="_blank") info@gostestural.ru
+        +e.A.link(href="mailto:info@gostestural.ru", target="_blank", itemprop="email") info@gostestural.ru
     +e.wrapper
       +e.nav
         // Nav menu header
@@ -57,8 +57,8 @@ include ../abstracts/bemto/bemto.pug
               +b.A.hamburger(href="#")
           +e.logo
             // Logo
-            +b.A.logo(href="index.html")       
-              img(src="img/logo-header.png", alt="logo", title="logo")
+            +b.A.logo(href="index.html", itemscope, itemtype="http://schema.org/Brand")       
+              img(src="img/logo-header.png", alt="logo", title="logo", itemprop="logo")
           // Document type menu
           +b.NAV.document-type-menu
             +e.UL.list
@@ -68,27 +68,27 @@ include ../abstracts/bemto/bemto.pug
       .col-xs-12.col-xl-8
         +e.wrapper
           // Cert type menu
-          +b.NAV.cert-type-menu
+          +b.NAV.cert-type-menu(itemscope, itemtype="http://schema.org/Service")
             +e.UL.list
               +e.item
-                +e.A.link(href="page.html") Сертификаты на производство
+                +e.A.link(href="page.html", itemprop="serviceType") Сертификаты на производство
               +e.item
-                +e.A.link(href="page.html") Разработка тех.документации
+                +e.A.link(href="page.html", itemprop="serviceType") Разработка тех.документации
               +e.item
-                +e.A.link(href="page.html") Документы для таможни
+                +e.A.link(href="page.html", itemprop="serviceType") Документы для таможни
               +e.item
-                +e.A.link(href="page.html") Допуски СРО
+                +e.A.link(href="page.html", itemprop="serviceType") Допуски СРО
               +e.item
-                +e.A.link(href="page.html") Международные сертификаты
+                +e.A.link(href="page.html", itemprop="serviceType") Международные сертификаты
           // Contacts header
-          +b.contacts-header
+          +b.contacts-header(itemscope, itemtype="http://schema.org/ContactPoint")
             +e.call(href="#") Он-лайн звонок
-            +e.A.link--tel1(href="tel:+73433284436", target="_blank") +7 (343) 328-44-36
-            +e.A.link--tel2(href="tel:+73433116280", target="_blank") +7 (343) 311-62-80
-            +e.A.link--email(href="mailto:info@gostestural.ru", target="_blank") info@gostestural.ru
+            +e.A.link--tel1(href="tel:+73433284436", target="_blank", itemprop="telephone") +7 (343) 328-44-36
+            +e.A.link--tel2(href="tel:+73433116280", target="_blank", itemprop="telephone") +7 (343) 311-62-80
+            +e.A.link--email(href="mailto:info@gostestural.ru", target="_blank", itemprop="email") info@gostestural.ru
             // City
             +b.city
-              +e.A.name(href="#") Екатеринбург
+              +e.A.name(href="#", itemprop="areaServed") Екатеринбург
               +e.UL.dropdown
                 +e.item(data-email= "info@gortestural.ru", data-prefix= "+7 (343) ", data-tel1= "328-44-36", data-tel2= "311-62-80") Екатеринбург
                 +e.item(data-email= "74@gortestural.ru", data-prefix= "+7 (351) ", data-tel1= "216-06-27") Челябинск
@@ -98,183 +98,183 @@ include ../abstracts/bemto/bemto.pug
                 +e.item(data-email= "02@gortestural.ru", data-prefix= "+7 (347) ", data-tel1= "264-19-52") Уфа
                 +e.item(data-email= "45@gortestural.ru", data-prefix= "+7 (352) ", data-tel1= "222-23-26") Курган
 
-  +b.menu-dropdown--product-type
+  +b.menu-dropdown--product-type(itemscope, itemtype="http://schema.org/Service")
     +e.inner.container      
       // Product type dropdown
       +b.UL.product-type-dropdown
         +e.item
-          +e.A.link(href="javascript:void(0);") Таможенное оформление
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") Таможенное оформление
           +b.UL.product-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Присвоить код ТН ВЭД
+              +e.A.link(href="page.html", itemprop="offers") Присвоить код ТН ВЭД
             +e.item 
-              +e.A.link(href="page.html") Таможенное оформление
+              +e.A.link(href="page.html", itemprop="offers") Таможенное оформление
         +e.item
-          +e.A.link(href="javascript:void(0);") Сертификация оборудования
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") Сертификация оборудования
           +b.UL.product-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Сертификат на муфты
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на муфты
             +e.item 
-              +e.A.link(href="page.html") Сертификат на насосы
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на насосы
             +e.item 
-              +e.A.link(href="page.html") Сертификат на оборудование
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на оборудование
             +e.item 
-              +e.A.link(href="page.html") Сертификат на установку
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на установку
             +e.item 
-              +e.A.link(href="page.html") Сертификат на фильтры
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на фильтры
             +e.item 
-              +e.A.link(href="page.html") Сертификация шаровых кранов
+              +e.A.link(href="page.html", itemprop="offers") Сертификация шаровых кранов
         +e.item
-          +e.A.link(href="javascript:void(0);") Сертификация строительной продукции
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") Сертификация строительной продукции
           +b.UL.product-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Сертификат на арматуру
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на арматуру
             +e.item 
-              +e.A.link(href="page.html") Сертификат на бетон
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на бетон
             +e.item 
-              +e.A.link(href="page.html") Сертификат на блоки
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на блоки
             +e.item 
-              +e.A.link(href="page.html") Сертификат на выключатели
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на выключатели
             +e.item 
-              +e.A.link(href="page.html") Сертификат на герметики
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на герметики
             +e.item 
-              +e.A.link(href="page.html") Сертификат на гипсокартон
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на гипсокартон
             +e.item 
-              +e.A.link(href="page.html") Сертификат на грунт
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на грунт
             +e.item 
-              +e.A.link(href="page.html") Сертификат на двери
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на двери
             +e.item 
-              +e.A.link(href="page.html") Сертификат на изоляцию
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на изоляцию
             +e.item 
-              +e.A.link(href="page.html") Сертификат на ЖБИ
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на ЖБИ
             +e.item 
-              +e.A.link(href="page.html") Сертификат на кирпич
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на кирпич
             +e.item 
-              +e.A.link(href="page.html") Сертификат на лампы
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на лампы
             +e.item 
-              +e.A.link(href="page.html") Сертификат на линолеум
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на линолеум
             +e.item 
-              +e.A.link(href="page.html") Сертификат на металлопрокат
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на металлопрокат
             +e.item 
-              +e.A.link(href="page.html") Сертификат на окна
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на окна
             +e.item 
-              +e.A.link(href="page.html") Сертификат на оконные блоки
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на оконные блоки
             +e.item 
-              +e.A.link(href="page.html") Сертификат на ПВХ
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на ПВХ
             +e.item 
-              +e.A.link(href="page.html") Сертификат на пеноблоки
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на пеноблоки
             +e.item 
-              +e.A.link(href="page.html") Сертификат на монтажную пену
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на монтажную пену
             +e.item 
-              +e.A.link(href="page.html") Сертификат на песок
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на песок
             +e.item 
-              +e.A.link(href="page.html") Сертификат на пиломатериалы
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на пиломатериалы
             +e.item 
-              +e.A.link(href="page.html") Сертификат на пленку
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на пленку
             +e.item 
-              +e.A.link(href="page.html") Сертификат на плитку
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на плитку
             +e.item 
-              +e.A.link(href="page.html") Сертификат на профиль
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на профиль
             +e.item 
-              +e.A.link(href="page.html") Сертификат на ПФ-115
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на ПФ-115
             +e.item 
-              +e.A.link(href="page.html") Сертификат на светильники
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на светильники
             +e.item 
-              +e.A.link(href="page.html") Сертификат на сетку
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на сетку
             +e.item 
-              +e.A.link(href="page.html") Сертификат на смесь
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на смесь
             +e.item 
-              +e.A.link(href="page.html") Сертификат на сталь
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на сталь
             +e.item 
-              +e.A.link(href="page.html") Сертификат на сухие смеси
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на сухие смеси
             +e.item 
-              +e.A.link(href="page.html") Сертификат на трубы
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на трубы
             +e.item 
-              +e.A.link(href="page.html") Сертификат на цемент
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на цемент
             +e.item 
-              +e.A.link(href="page.html") Сертификат на швеллер
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на швеллер
             +e.item 
-              +e.A.link(href="page.html") Сертификат на шкаф
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на шкаф
             +e.item 
-              +e.A.link(href="page.html") Сертификат на штукатурку
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на штукатурку
             +e.item 
-              +e.A.link(href="page.html") Сертификат на щебень
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на щебень
             +e.item 
-              +e.A.link(href="page.html") Сертификат на эмаль
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на эмаль
         +e.item
-          +e.A.link(href="javascript:void(0);") Сертификация пищевой продукции
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") Сертификация пищевой продукции
           +b.UL.product-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Сертификат на БАД
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на БАД
             +e.item 
-              +e.A.link(href="page.html") Сертификат на воду
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на воду
             +e.item 
-              +e.A.link(href="page.html") Сертификат на масло
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на масло
             +e.item 
-              +e.A.link(href="page.html") Документы на молоко
+              +e.A.link(href="page.html", itemprop="offers") Документы на молоко
             +e.item 
-              +e.A.link(href="page.html") Сертификат на овощи
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на овощи
             +e.item 
-              +e.A.link(href="page.html") Сертификат на хлеб
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на хлеб
             +e.item 
-              +e.A.link(href="page.html") Сертификат на чай
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на чай
             +e.item 
-              +e.A.link(href="page.html") Документы на мёд
+              +e.A.link(href="page.html", itemprop="offers") Документы на мёд
             +e.item 
-              +e.A.link(href="page.html") Сертификация услуг общественного питания
+              +e.A.link(href="page.html", itemprop="offers") Сертификация услуг общественного питания
         +e.item
-          +e.A.link(href="javascript:void(0);") Сертификация детской продукции
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") Сертификация детской продукции
           +b.UL.product-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Сертификат на игровые площадки
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на игровые площадки
         +e.item
-          +e.A.link(href="javascript:void(0);") Сертификация продукции легкой промышленности
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") Сертификация продукции легкой промышленности
           +b.UL.product-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Сертификат соответствия на обувь
+              +e.A.link(href="page.html", itemprop="offers") Сертификат соответствия на обувь
             +e.item 
-              +e.A.link(href="page.html") Сертификат на одежду
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на одежду
             +e.item 
-              +e.A.link(href="page.html") Сертификат на перчатки
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на перчатки
         +e.item
-          +e.A.link(href="javascript:void(0);") Сертификация парфюмерно-косметической продукции
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") Сертификация парфюмерно-косметической продукции
           +b.UL.product-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Сертификат на бижутерию
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на бижутерию
             +e.item 
-              +e.A.link(href="page.html") Сертификат на косметику
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на косметику
             +e.item 
-              +e.A.link(href="page.html") Сертификат на косметическое масло
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на косметическое масло
             +e.item 
-              +e.A.link(href="page.html") Сертификат на парфюмерию
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на парфюмерию
         +e.item
-          +e.A.link(href="javascript:void(0);") Сертификация производства
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") Сертификация производства
           +b.UL.product-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Сертификат на производство
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на производство
         +e.item
           +e.A.link(href="javascript:void(0);") Сертификация бытовой химии
           +b.UL.product-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Сертификат на бытовую химию
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на бытовую химию
         +e.item
-          +e.A.link(href="javascript:void(0);") Сертификация полиграфической и канцелярской продукции
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") Сертификация полиграфической и канцелярской продукции
           +b.UL.product-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Сертификат на книги
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на книги
             +e.item 
-              +e.A.link(href="page.html") Сертификат на клей
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на клей
         +e.item
-          +e.A.link(href="javascript:void(0);") Проверка подлинности документов
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") Проверка подлинности документов
           +b.UL.product-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Реестр документов на сайте Росаккредитации
+              +e.A.link(href="page.html", itemprop="offers") Реестр документов на сайте Росаккредитации
             +e.item 
-              +e.A.link(href="page.html") Реестр Свидетельств о госрегистрации
+              +e.A.link(href="page.html", itemprop="offers") Реестр Свидетельств о госрегистрации
             +e.item 
-              +e.A.link(href="page.html") Реестр медицинских изделий и организаций
+              +e.A.link(href="page.html", itemprop="offers") Реестр медицинских изделий и организаций
             +e.item 
-              +e.A.link(href="page.html") Реестр зарегистрированных нотификаций (уведомлений)
+              +e.A.link(href="page.html", itemprop="offers") Реестр зарегистрированных нотификаций (уведомлений)
       +e.A.close(href="#")
 
   +b.menu-dropdown--document-type
@@ -282,121 +282,121 @@ include ../abstracts/bemto/bemto.pug
       // Document type dropdown
       +b.UL.document-type-dropdown
         +e.item
-          +e.A.link(href="javascript:void(0);") Сертификация и декларирование
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") Сертификация и декларирование
           +b.UL.document-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Сертификация продукции
+              +e.A.link(href="page.html", itemprop="offers") Сертификация продукции
             +e.item 
-              +e.A.link(href="page.html") Сертификат на услуги
+              +e.A.link(href="page.html", itemprop="offers") Сертификат на услуги
             +e.item 
-              +e.A.link(href="page.html") Сертификат происхождения
+              +e.A.link(href="page.html", itemprop="offers") Сертификат происхождения
             +e.item 
-              +e.A.link(href="page.html") Сертификат промышленной безопасности
+              +e.A.link(href="page.html", itemprop="offers") Сертификат промышленной безопасности
             +e.item 
-              +e.A.link(href="page.html") Сертификат соответствия ГОСТ Р
+              +e.A.link(href="page.html", itemprop="offers") Сертификат соответствия ГОСТ Р
             +e.item 
-              +e.A.link(href="page.html") Сертификат соответствия ТР ТС
+              +e.A.link(href="page.html", itemprop="offers") Сертификат соответствия ТР ТС
             +e.item 
-              +e.A.link(href="page.html") Сертификат соответствия ТР
+              +e.A.link(href="page.html", itemprop="offers") Сертификат соответствия ТР
             +e.item 
-              +e.A.link(href="page.html") Сертификат CE
+              +e.A.link(href="page.html", itemprop="offers") Сертификат CE
             +e.item 
-              +e.A.link(href="page.html") Добровольная сертификация
+              +e.A.link(href="page.html", itemprop="offers") Добровольная сертификация
             +e.item 
-              +e.A.link(href="page.html") Декларация соответствия ГОСТ Р
+              +e.A.link(href="page.html", itemprop="offers") Декларация соответствия ГОСТ Р
             +e.item 
-              +e.A.link(href="page.html") Декларация соответствия Таможенного союза
+              +e.A.link(href="page.html", itemprop="offers") Декларация соответствия Таможенного союза
             +e.item 
-              +e.A.link(href="page.html") Декларация соответствия Техническому регламенту
+              +e.A.link(href="page.html", itemprop="offers") Декларация соответствия Техническому регламенту
             +e.item 
-              +e.A.link(href="page.html") Декларация связи
+              +e.A.link(href="page.html", itemprop="offers") Декларация связи
             +e.item 
-              +e.A.link(href="page.html") Таможенная декларация соответствия
+              +e.A.link(href="page.html", itemprop="offers") Таможенная декларация соответствия
         +e.item
-          +e.A.link(href="javascript:void(0);") ISO
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") ISO
           +b.UL.document-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Сертификат ИСО 9001
+              +e.A.link(href="page.html", itemprop="offers") Сертификат ИСО 9001
             +e.item 
-              +e.A.link(href="page.html") ИСО 22 000 (ХАССП), HACCP
+              +e.A.link(href="page.html", itemprop="offers") ИСО 22 000 (ХАССП), HACCP
             +e.item 
-              +e.A.link(href="page.html") Сертификат ОХСАС 18001
+              +e.A.link(href="page.html", itemprop="offers") Сертификат ОХСАС 18001
             +e.item 
-              +e.A.link(href="page.html") ИСО 14001
+              +e.A.link(href="page.html", itemprop="offers") ИСО 14001
         +e.item
-          +e.A.link(href="javascript:void(0);") Техническая документация
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") Техническая документация
           +b.UL.document-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Обоснование безопасности
+              +e.A.link(href="page.html", itemprop="offers") Обоснование безопасности
             +e.item 
-              +e.A.link(href="page.html") Паспорт безопасности вещества
+              +e.A.link(href="page.html", itemprop="offers") Паспорт безопасности вещества
             +e.item 
-              +e.A.link(href="page.html") Паспорт изделия
+              +e.A.link(href="page.html", itemprop="offers") Паспорт изделия
             +e.item 
-              +e.A.link(href="page.html") Рецептуры
+              +e.A.link(href="page.html", itemprop="offers") Рецептуры
             +e.item 
-              +e.A.link(href="page.html") Руководство по эксплуатации
+              +e.A.link(href="page.html", itemprop="offers") Руководство по эксплуатации
             +e.item 
-              +e.A.link(href="page.html") Технические условия
+              +e.A.link(href="page.html", itemprop="offers") Технические условия
             +e.item 
-              +e.A.link(href="page.html") Технологический регламент
+              +e.A.link(href="page.html", itemprop="offers") Технологический регламент
             +e.item 
-              +e.A.link(href="page.html") Технологические инструкции
+              +e.A.link(href="page.html", itemprop="offers") Технологические инструкции
             +e.item 
-              +e.A.link(href="page.html") Разработка стандарта организации
+              +e.A.link(href="page.html", itemprop="offers") Разработка стандарта организации
             +e.item 
-              +e.A.link(href="page.html") Штрихкоды
+              +e.A.link(href="page.html", itemprop="offers") Штрихкоды
         +e.item
-          +e.A.link(href="javascript:void(0);") Пожарная сертификация
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") Пожарная сертификация
           +b.UL.document-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Декларация пожарной безопасности
+              +e.A.link(href="page.html", itemprop="offers") Декларация пожарной безопасности
             +e.item 
-              +e.A.link(href="page.html") Декларация пожарной безопасности на объект
+              +e.A.link(href="page.html", itemprop="offers") Декларация пожарной безопасности на объект
             +e.item 
-              +e.A.link(href="page.html") Сертификат пожарной безопасности
+              +e.A.link(href="page.html", itemprop="offers") Сертификат пожарной безопасности
         +e.item
-          +e.A.link(href="javascript:void(0);") Гигиеническое заключение
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") Гигиеническое заключение
           +b.UL.document-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Свидетельство о гос. регистрации (СГР)
+              +e.A.link(href="page.html", itemprop="offers") Свидетельство о гос. регистрации (СГР)
             +e.item 
-              +e.A.link(href="page.html") Экспертное заключение                     
+              +e.A.link(href="page.html", itemprop="offers") Экспертное заключение                     
         +e.item
-          +e.A.link(href="javascript:void(0);") Разрешительные документы
+          +e.A.link(href="javascript:void(0);", itemprop="serviceType") Разрешительные документы
           +b.UL.document-type-submenu
             +e.item 
-              +e.A.link(href="page.html") Аттестация технология сварки НАКС
+              +e.A.link(href="page.html", itemprop="offers") Аттестация технология сварки НАКС
             +e.item 
-              +e.A.link(href="page.html") Заключение Эксконта
+              +e.A.link(href="page.html", itemprop="offers") Заключение Эксконта
             +e.item 
-              +e.A.link(href="page.html") Отказное письмо
+              +e.A.link(href="page.html", itemprop="offers") Отказное письмо
             +e.item 
-              +e.A.link(href="page.html") CБКТС
+              +e.A.link(href="page.html", itemprop="offers") CБКТС
             +e.item 
-              +e.A.link(href="page.html") Одобрение типа ТС
+              +e.A.link(href="page.html", itemprop="offers") Одобрение типа ТС
             +e.item 
-              +e.A.link(href="page.html") Лицензия МЧС
+              +e.A.link(href="page.html", itemprop="offers") Лицензия МЧС
             +e.item 
-              +e.A.link(href="page.html") Нотификация ФСБ
+              +e.A.link(href="page.html", itemprop="offers") Нотификация ФСБ
             +e.item 
-              +e.A.link(href="page.html") Разрешение Ростехнадзора
+              +e.A.link(href="page.html", itemprop="offers") Разрешение Ростехнадзора
             +e.item 
-              +e.A.link(href="page.html") Регистрационное удостоверение
+              +e.A.link(href="page.html", itemprop="offers") Регистрационное удостоверение
             +e.item 
-              +e.A.link(href="page.html") Регистрация ОПО
+              +e.A.link(href="page.html", itemprop="offers") Регистрация ОПО
             +e.item 
-              +e.A.link(href="page.html") Экспертиза промышленной безопасности
+              +e.A.link(href="page.html", itemprop="offers") Экспертиза промышленной безопасности
             +e.item 
-              +e.A.link(href="page.html") Озоновое заключение
+              +e.A.link(href="page.html", itemprop="offers") Озоновое заключение
             +e.item 
-              +e.A.link(href="page.html") Оформление лицензии на отходы
+              +e.A.link(href="page.html", itemprop="offers") Оформление лицензии на отходы
             +e.item 
-              +e.A.link(href="page.html") Регистрация товарного знака
+              +e.A.link(href="page.html", itemprop="offers") Регистрация товарного знака
             +e.item 
-              +e.A.link(href="page.html") Тендерные закупки
+              +e.A.link(href="page.html", itemprop="offers") Тендерные закупки
         +e.item
-          +e.A.link(href="page.html") Допуск СРО
+          +e.A.link(href="page.html", itemprop="offers") Допуск СРО
       +e.A.close(href="#")
 
 

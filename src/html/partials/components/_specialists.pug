@@ -7,14 +7,14 @@ include ../abstracts/bemto/bemto.pug
         +e.H2.title Специалисты нашей компании
         +e.gallery
           - for (var i = 1; i < 4; ++i){
-            +b.manager
+            +b.manager(itemscope, itemtype="http://schema.org/Person")
               +e.inner
                 +e.photo
                   +e.img
-                    img(src="img/manager1.jpg", alt="manager", title="manager")
+                    img(src="img/manager1.jpg", alt="manager", title="manager", itemprop="image")
                   +b.manager-info
-                    +e.H3.name Анастасия Шушаричева
-                    +e.position специалист по сертификации
+                    +e.H3.name(itemprop="name") Анастасия Шушаричева
+                    +e.position(itemprop="jobTitle") специалист по сертификации
                     +e.line
                       +e.A.link--icq(href= "http://www.icq.com/whitepages/cmd.php?uin=111222333&action=message") 111-222-333
                       +e.A.link--skype(href= "skype:skype01") veryveryveryverylongskype01      

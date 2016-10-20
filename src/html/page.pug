@@ -10,9 +10,9 @@ block content
             ='>'
             span Сертификат соответствия ГОСТ Р
           // Content
-          +b.SECTION.content
-            +e.H1.title Сертификат соответствия ГОСТ Р (h1)
-            +e.text           
+          +b.SECTION.content(itemscope, itemtype="http://schema.org/Article")
+            +e.H1.title(itemprop="headline") Сертификат соответствия ГОСТ Р (h1)
+            +e.text(itemprop="articleBody")           
               h2 Заголовок текста h2
               h3 Заголовок текста h3
               h4 Заголовок текста h4

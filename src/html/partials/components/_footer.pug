@@ -2,97 +2,100 @@ include ../abstracts/bemto/bemto.pug
 
 
 // Pre-footer
-+b.FOOTER.pre-footer
++b.FOOTER.pre-footer(itemscope, itemtype="http://schema.org/Service")
   +e.inner.container
     .row
       .col-xs-12
         +e.UL.nav
           +e.item
-            +b.A.btn--small(href="page-landing.html") Сертификация для ИП
+            +b.A.btn--small(href="page-landing.html", itemprop="serviceType") Сертификация для ИП
           +e.item
-            +b.A.btn--small(href="page-landing.html") Сертификация для малого и среднего бизнеса
+            +b.A.btn--small(href="page-landing.html", itemprop="serviceType") Сертификация для малого и среднего бизнеса
           +e.item
-            +b.A.btn--small(href="page-landing.html") Сертификация для крупного бизнеса
+            +b.A.btn--small(href="page-landing.html", itemprop="serviceType") Сертификация для крупного бизнеса
           +e.item
-            +b.A.btn--small(href="page-landing.html") Допуск СРО
+            +b.A.btn--small(href="page-landing.html", itemprop="serviceType") Допуск СРО
           +e.item
-            +b.A.btn--small(href="page-landing.html") ХАССП
+            +b.A.btn--small(href="page-landing.html", itemprop="serviceType") ХАССП
           +e.item--search
             // Search
             +b.search
               +e.FORM.form
                 +e.INPUT.input(type='text', name='Поиск', placeholder='поиск')
               +e.A.icon(href="javascript:void(0);")
+
 // Footer
 +b.FOOTER.footer
   +e.inner.container
     .row
       .col-xs-12.col-xl-6.push-xl-3
         // Services Section
-        +b.SECTION.services-section
+        +b.SECTION.services-section(itemscope, itemtype="http://schema.org/Service")
           +e.H3.title Наши услуги
           +e.UL.list
             +e.item 
-              +e.link(href="page.html") сертификаты соответствия ГОСТ Р;
+              +e.link(href="page.html", itemprop="offers") сертификаты соответствия ГОСТ Р;
             +e.item 
-              +e.link(href="page.html") сертификаты соответствия ТР ТС;
+              +e.link(href="page.html", itemprop="offers") сертификаты соответствия ТР ТС;
             +e.item 
-              +e.link(href="page.html") сертификаты на услуги;
+              +e.link(href="page.html", itemprop="offers") сертификаты на услуги;
             +e.item 
-              +e.link(href="page.html") сертификаты происхождения;
+              +e.link(href="page.html", itemprop="offers") сертификаты происхождения;
             +e.item 
-              +e.link(href="page.html") сертификаты соответствия продукции;
+              +e.link(href="page.html", itemprop="offers") сертификаты соответствия продукции;
             +e.item 
-              +e.link(href="page.html") различные виды деклараций; 
+              +e.link(href="page.html", itemprop="offers") различные виды деклараций; 
             +e.item 
-              +e.link(href="page.html") сертификация систем менеджмента качества;
+              +e.link(href="page.html", itemprop="offers") сертификация систем менеджмента качества;
             +e.item 
-              +e.link(href="page.html") подтверждения санитарно-эпидемиологического и гигиенического соответствия;
+              +e.link(href="page.html", itemprop="offers") подтверждения санитарно-эпидемиологического и гигиенического соответствия;
             +e.item 
-              +e.link(href="page.html") подтверждение соответствия в области пожарной безопасности;
+              +e.link(href="page.html", itemprop="offers") подтверждение соответствия в области пожарной безопасности;
             +e.item 
-              +e.link(href="page.html") разрешительные документы Ростехнадзора;
+              +e.link(href="page.html", itemprop="offers") разрешительные документы Ростехнадзора;
             +e.item 
-              +e.link(href="page.html") допуск СРО, аттестация технологии сварки НАКС;
+              +e.link(href="page.html", itemprop="offers") допуск СРО, аттестация технологии сварки НАКС;
             +e.item 
-              +e.link(href="page.html") лицензирование в области МЧС;
+              +e.link(href="page.html", itemprop="offers") лицензирование в области МЧС;
             +e.item 
-              +e.link(href="page.html") разработка нормативно-технической документации и многое другое;
+              +e.link(href="page.html", itemprop="offers") разработка нормативно-технической документации и многое другое;
             +e.item 
-              +e.link(href="page.html") регистрация штрих-кодов DiSAI.
+              +e.link(href="page.html", itemprop="offers") регистрация штрих-кодов DiSAI.
+
       .col-xs-12.col-sm-6.col-xl-3.pull-xl-6
         // Logo
-        +b.A.logo(href="index.html") 
-          img(src="img/logo-footer.png", alt="logo", title="logo")
+        +b.A.logo(href="index.html", itemscope, itemtype="http://schema.org/Brand") 
+          img(src="img/logo-footer.png", alt="logo", title="logo", itemprop="logo")
         +e.excerpt Центр сертификации «Гортест Урал» является одним из российских лидеров в области разработки, оформления и получения разрешительной документации...
         +e.A.link--more(href="page.html") Читать подробнее »
         // Accreditation
         +b.accreditation
           +e.logo 
           +e.link-wrapper          
-            +e.line Аккредитованы в росаакредитации
+            +e.line Аккредитованы в Росаккредитации
             +e.line Член ТТП
             +e.line Нам доверяют
+
       .col-xs-12.col-sm-6.col-xl-3
         // Contacts Footer
-        +b.SECTION.contacts-footer
+        +b.SECTION.contacts-footer(itemscope, itemtype="http://schema.org/ContactPoint")
           +e.H3.title Наши контакты
           +e.UL.list
             +e.line
               +e.item Город:
-              +e.item--city Екатеринбург
+              +e.item--city(itemprop="areaServed") Екатеринбург
             +e.line
               +e.item Адрес:
-              +e.item "Площадь 1905 года", ул. Ленина, д. 25, БЦ "Европа", оф. 5.124
+              +e.item(itemprop="address") "Площадь 1905 года", ул. Ленина, д. 25, БЦ "Европа", оф. 5.124
             +e.line
               +e.item Телефон:
               +e.item
-                +e.A.link--tel(href="tel:+73433284436", target="_blank") +7 (343) 328-44-36
-                +e.A.link--tel(href="tel:+73433116280", target="_blank") +7 (343) 311-62-80
+                +e.A.link--tel(href="tel:+73433284436", target="_blank", itemprop="telephone") +7 (343) 328-44-36
+                +e.A.link--tel(href="tel:+73433116280", target="_blank", itemprop="telephone") +7 (343) 311-62-80
             +e.line
               +e.item E-mail:
               +e.item
-                +e.A.link--mail(href="mailto:info@gostestural.ru", target="_blank") info@gostestural.ru
+                +e.A.link--mail(href="mailto:info@gostestural.ru", target="_blank", itemprop="email") info@gostestural.ru
             +e.line
               +e.item Соц.сети:
               +e.item 
@@ -101,6 +104,7 @@ include ../abstracts/bemto/bemto.pug
                   +e.A.link--fb(href="#")
                   +e.A.link--in(href="#")
                   +e.A.link--instagram(href="#")
+
 // After footer
 +b.FOOTER.after-footer
   +e.inner.container

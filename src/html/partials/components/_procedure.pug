@@ -1,6 +1,6 @@
 include ../abstracts/bemto/bemto.pug
 
-+b.SECTION.procedure
++b.SECTION.procedure(itemscope, itemtype="http://schema.org/Service")
   +e.inner.container
     .row 
       .col-xs-12           
@@ -9,26 +9,26 @@ include ../abstracts/bemto/bemto.pug
       +e.item.col-xs-12.col-md-3
         +e.block
           +e.icon        
-          +e.H3.step Заявка
-          +e.text Заполнить заявку или заказать звонок
+          +e.H3.step(itemprop="offers") Заявка
+          +e.text(itemprop="description") Заполнить заявку или заказать звонок
           +e.arrow
       +e.item.col-xs-12.col-md-3
         +e.block
           +e.icon        
-          +e.H3.step Уточнение
-          +e.text Менеджер свяжется с вами для уточнения условий сертификации
+          +e.H3.step(itemprop="offers") Уточнение
+          +e.text(itemprop="description") Менеджер свяжется с вами для уточнения условий сертификации
           +e.arrow
       +e.item.col-xs-12.col-md-3
         +e.block
           +e.icon        
-          +e.H3.step Макет
-          +e.text Предложит на утверждение макет сертификата
+          +e.H3.step(itemprop="offers") Макет
+          +e.text(itemprop="description") Предложит на утверждение макет сертификата
           +e.arrow
       +e.item.col-xs-12.col-md-3
         +e.block
           +e.icon        
-          +e.H3.step Доставка
-          +e.text Готовый сертификат мы вышлем Вам курьером
+          +e.H3.step(itemprop="offers") Доставка
+          +e.text(itemprop="description") Готовый сертификат мы вышлем Вам курьером
           +e.arrow
     .row 
       +e.btn.col-xs-12           

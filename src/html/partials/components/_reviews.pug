@@ -24,24 +24,24 @@ include ../abstracts/bemto/bemto.pug
     include _form--review.pug 
   // Articles   
   +e.reviews__articles(id='reviews__articles')
-    +b.ARTICLE.review
-      +e.H2.title Благодарим за плодотворное сотрудничество
+    +b.ARTICLE.review(itemscope, itemtype="http://schema.org/Review")
+      +e.H2.title(itemprop="headline") Благодарим за плодотворное сотрудничество
       +e.P.person Компания: 
-        span ООО Ринджана                
+        span(itemprop="author") ООО Ринджана                
       +e.P.text Комментарий: 
-        span Благодарим за плодотворное сотрудничество, индивидуальный подход, оперативность, грамотность при выполнении работ. 
-    +b.ARTICLE.review
-      +e.H2.title Благодарим за плодотворное сотрудничество
+        span(itemprop="citation") Благодарим за плодотворное сотрудничество, индивидуальный подход, оперативность, грамотность при выполнении работ. 
+    +b.ARTICLE.review(itemscope, itemtype="http://schema.org/Review")
+      +e.H2.title(itemprop="headline") Благодарим за плодотворное сотрудничество
       +e.P.person Компания: 
-        span ООО Ринджана                
+        span(itemprop="author") ООО Ринджана                
       +e.P.text Комментарий: 
-        span Благодарим за плодотворное сотрудничество, индивидуальный подход, оперативность, грамотность при выполнении работ. 
-    +b.ARTICLE.review
-      +e.H2.title Благодарим за плодотворное сотрудничество
+        span(itemprop="citation") Благодарим за плодотворное сотрудничество, индивидуальный подход, оперативность, грамотность при выполнении работ. 
+    +b.ARTICLE.review(itemscope, itemtype="http://schema.org/Review")
+      +e.H2.title(itemprop="headline") Благодарим за плодотворное сотрудничество
       +e.P.person Компания: 
-        span ООО Ринджана                
+        span(itemprop="author") ООО Ринджана                
       +e.P.text Комментарий: 
-        span Благодарим за плодотворное сотрудничество, индивидуальный подход, оперативность, грамотность при выполнении работ. 
+        span(itemprop="citation") Благодарим за плодотворное сотрудничество, индивидуальный подход, оперативность, грамотность при выполнении работ. 
 
 
 

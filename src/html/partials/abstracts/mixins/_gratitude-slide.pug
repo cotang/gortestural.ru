@@ -1,10 +1,10 @@
 mixin gratitudeSlide(img, alt, title, text)
   +e.slide
-    +b.gratitude-item
+    +b.gratitude-item(itemscope, itemtype="http://schema.org/Review")
       +e.img
-        img(src= "img/" + img alt= alt title= alt)
+        img(src= "img/" + img alt= alt title= alt, itemprop="image")
       +e.review
-        +e.H3.title #{title}
-        +e.P.text #{text}
+        +e.H3.title(itemprop="author") #{title}
+        +e.P.text(itemprop="reviewBody") #{text}
         +e.A.link(href='single-review.html') Читать полностью...
 
