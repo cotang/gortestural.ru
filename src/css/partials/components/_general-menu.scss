@@ -46,6 +46,12 @@
       padding: 0 0 0 15px;
       &:hover, &:focus {
         color: $red;
+      }
+      &--active{
+        color: $red;
+        &:hover, &:focus{
+          color: $link-color-white;
+        }
       }     
     }    
   }
