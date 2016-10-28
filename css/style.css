@@ -826,7 +826,7 @@ body {
   margin: 0;
   background-color: #ffffff;
   color: #444444;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 1.43; }
 
@@ -1139,6 +1139,10 @@ img {
     padding: 0 0 0 15px; }
     .general-menu--footer .general-menu__link:hover, .general-menu--footer .general-menu__link:focus {
       color: #dc0e0f; }
+    .general-menu--footer .general-menu__link--active {
+      color: #dc0e0f; }
+      .general-menu--footer .general-menu__link--active:hover, .general-menu--footer .general-menu__link--active:focus {
+        color: #ffffff; }
 
 .after-header {
   box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.11);
